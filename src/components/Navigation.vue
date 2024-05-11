@@ -6,8 +6,8 @@
 <template>
 <nav>
     <ul>
-        <li><RouterLink class="logo" to="/">Kampagne home</RouterLink></li>
-        <li><RouterLink to="/about">Om os</RouterLink></li>
+        <li><RouterLink class="logo" to="/">Kampagne Navn</RouterLink></li>
+        <li><RouterLink to="/about">Om Creo</RouterLink></li>
     </ul>
 </nav>
 
