@@ -1,9 +1,19 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import Hero from '@/components/Hero.vue';
+import BrandValue from '@/components/BrandValue.vue';
+import TextMedia from '@/components/TextMedia.vue';
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <div class="wrapper"><Hero /></div>
+    <BrandValue/>
+    <TextMedia/>
   </main>
 </template>
+
+<style scoped>
+
+
+
+</style>
