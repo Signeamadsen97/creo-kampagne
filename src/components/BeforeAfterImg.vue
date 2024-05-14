@@ -39,6 +39,7 @@ const props = defineProps({
   padding: 50px var(--wrapper-padding-x);
 
   &.reverse {
+
     .bigtext {
       order: -1;
     }
@@ -55,18 +56,17 @@ const props = defineProps({
     .description_text {
         align-items: left;
     }
-
+   
     .before_header {
       display: none;
     }
-  }
 }
+  }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-
 
 .bigtext {
   display: grid;

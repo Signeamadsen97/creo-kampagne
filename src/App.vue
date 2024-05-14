@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Navigation from './components/Navigation.vue';
+import FooterCreo from './components/FooterCreo.vue';
 </script>
 
 <template>
@@ -11,7 +12,7 @@ import Navigation from './components/Navigation.vue';
   <RouterView />
 
   <footer>
-    
+    <FooterCreo/>
   </footer>
 </template>
 
