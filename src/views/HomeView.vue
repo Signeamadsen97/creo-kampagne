@@ -8,6 +8,7 @@ import PollBox from "@/components/PollBox.vue";
 import CaruselSlider from "@/components/CaruselSlider.vue";
 
 import { ref } from "vue";
+import BeforeAfterImg from "@/components/BeforeAfterImg.vue";
 
 const items = ref([
   {
@@ -71,6 +72,8 @@ const items = ref([
     </div>
 
     <CaruselSlider :slides="items" />
+    <BeforeAfterImg/>
+    <BeforeAfterImg :reverse="true" />
   </main>
 </template>
 
