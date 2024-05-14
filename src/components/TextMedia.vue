@@ -1,5 +1,21 @@
 <script setup>
 const props = defineProps({
+  heading: {
+    type: String,
+    default: "",
+  },
+  gridHeading: {
+    type: String,
+    default: "",
+  },
+  gridText: {
+    type: String,
+    default: "",
+  },
+  gridImageSrc: {
+    type: String,
+    default: "",
+  },
   reverse: {
     type: Boolean,
     default: false,
@@ -7,24 +23,35 @@ const props = defineProps({
   vertical: {
     type: Boolean,
     default: false,
-  }
+  },
+  hideHeading: {
+    type: Boolean,
+    default: false,
+  },
+  aboutUs: {
+    type: Boolean,
+    default: false,
+  },
 });
-
 </script>
 
 <template>
-  <div class="media_wrapper" :class="{ reverse: reverse, vertical: vertical}">
-    <h1 class="media_heading">Om projekt</h1>
+  <div
+    class="media_wrapper"
+    :class="{
+      reverse: reverse,
+      vertical: vertical,
+      'hide-heading': hideHeading,
+      'about-us': aboutUs,
+    }"
+  >
+    <h1 v-if="heading?.length" class="media_heading">{{ heading }}</h1>
     <div class="grid">
       <div class="media_text">
-        <h2>Køb 2 elefanter for 1</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s,
-        </p>
+        <h2>{{ gridHeading }}</h2>
+        <p>{{ gridText }}</p>
       </div>
-      <img src="https://fakeimg.pl/467x549" alt="" class="media_img" />
+      <img :src="gridImageSrc" alt="" class="media_img" />
     </div>
   </div>
 </template>
@@ -41,10 +68,6 @@ const props = defineProps({
     .media_img {
       order: -1;
     }
-
-    .media_heading {
-      display: none;
-    }
   }
   &.vertical {
     .grid {
@@ -56,6 +79,12 @@ const props = defineProps({
 
     .media_img {
       order: -1;
+    }
+  }
+
+  &.about-us {
+    .media_img {
+      width: 100%;
     }
   }
 }
@@ -74,6 +103,4 @@ const props = defineProps({
   width: 100%;
   order: 2;
 }
-
-
 </style>
