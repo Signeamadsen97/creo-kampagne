@@ -12,10 +12,10 @@ import FooterCreo from './components/FooterCreo.vue';
   <RouterView />
 
   <footer>
-    <FooterCreo/>
+    <FooterCreo />
   </footer>
 </template>
 
 <style scoped>
-
+@import './assets/main.css';
 </style>
