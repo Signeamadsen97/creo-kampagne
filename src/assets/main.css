@@ -12,6 +12,7 @@
     font-size: 2rem; /* Juster størrelsen efter behov */
     font-weight: 600; /* Juster vægten efter behov */
     color: #606C38;
+    padding-bottom: 15px;
   }
   
   .h3_poppins {
@@ -19,6 +20,7 @@
     font-size: 1.75rem; /* Juster størrelsen efter behov */
     font-weight: 500; /* Juster vægten efter behov */
     color: #606C38;
+    padding-bottom: 10px;
   }
   
   .body_poppins {
