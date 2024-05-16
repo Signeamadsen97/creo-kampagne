@@ -1,2 +1,29 @@
 @import './base.css';
 
+.h1_poppins {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem; /* Juster størrelsen efter behov */
+    font-weight: 700; /* Juster vægten efter behov */
+    color: #606C38;
+  }
+  
+  .h2_poppins {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; /* Juster størrelsen efter behov */
+    font-weight: 600; /* Juster vægten efter behov */
+    color: #606C38;
+  }
+  
+  .h3_poppins {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem; /* Juster størrelsen efter behov */
+    font-weight: 500; /* Juster vægten efter behov */
+    color: #606C38;
+  }
+  
+  .body_poppins {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; /* Juster størrelsen efter behov */
+    font-weight: 400; /* Juster vægten efter behov */
+    line-height: 1.5; /* Juster linjehøjden efter behov */
+  }

@@ -1,8 +1,8 @@
 <script setup></script>
 
 <template>
+  <h1 class="h2_poppins">Brand værdi</h1>
   <div class="brand_wrapper">
-    <h1>Brand værdi</h1>
     <div class="grid">
       <img src="https://fakeimg.pl/251x181" alt="" />
       <img src="https://fakeimg.pl/251x181" alt="" />
@@ -14,22 +14,21 @@
 
 <style scoped>
 .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-    
-}
-.grid img {
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+
 }
 
-h1 {
-    text-align: center;
+.grid img {
+  width: 100%;
 }
+
+h1 {}
 
 .brand_wrapper {
-    background-color: green;
-    padding: var(--wrapper-padding)
-}
+  background-color: #D4D4AA;
+  padding: var(--wrapper-padding);
 
+}
 </style>

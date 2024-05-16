@@ -1,6 +1,6 @@
 :root {
   --wrapper-padding-x: 65px;
-  --wrapper-padding-y: 0;
+  --wrapper-padding-y: 20px;
   --wrapper-padding: var(--wrapper-padding-y) var(--wrapper-padding-x);
 }
 

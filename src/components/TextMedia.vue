@@ -36,20 +36,17 @@ const props = defineProps({
 </script>
 
 <template>
-  <div
-    class="media_wrapper"
-    :class="{
-      reverse: reverse,
-      vertical: vertical,
-      'hide-heading': hideHeading,
-      'about-us': aboutUs,
-    }"
-  >
-    <h1 v-if="heading?.length" class="media_heading">{{ heading }}</h1>
+  <div class="media_wrapper" :class="{
+    reverse: reverse,
+    vertical: vertical,
+    'hide-heading': hideHeading,
+    'about-us': aboutUs,
+  }">
+    <h1 v-if="heading?.length" class="media_heading h2_poppins">{{ heading }}</h1>
     <div class="grid">
       <div class="media_text">
-        <h2>{{ gridHeading }}</h2>
-        <p>{{ gridText }}</p>
+        <h2 class="h3_poppins">{{ gridHeading }}</h2>
+        <p class="body_poppins">{{ gridText }}</p>
       </div>
       <img :src="gridImageSrc" alt="" class="media_img" />
     </div>
@@ -69,10 +66,12 @@ const props = defineProps({
       order: -1;
     }
   }
+
   &.vertical {
     .grid {
       grid-template-columns: 1fr 1fr;
     }
+
     .media_text {
       order: 2;
     }

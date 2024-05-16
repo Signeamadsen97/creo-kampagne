@@ -3,7 +3,7 @@
 <template>
   <div class="grid">
     <div>
-      <p class="grid_head_text">
+      <p class="header_text body_poppins">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s,
@@ -11,9 +11,9 @@
     </div>
 
     <div>
-      <h1>Hero tekts</h1>
+      <h1 class="hero_1 h1_poppins">Hero tekts</h1>
       <img class="heromedia" src="https://fakeimg.pl/982x589" alt="" />
-      <h1>Hero tekst</h1>
+      <h1 class="hero_2 h1_poppins ">Hero tekst</h1>
     </div>
   </div>
 </template>
@@ -29,5 +29,21 @@
 
 .heromedia {
   width: 100%;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header_text {
+  padding-top: 10rem;
+}
+
+.hero_2 {
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
 }
 </style>
