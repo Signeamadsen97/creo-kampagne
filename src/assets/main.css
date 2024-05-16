@@ -29,3 +29,8 @@
     font-weight: 400; /* Juster vægten efter behov */
     line-height: 1.5; /* Juster linjehøjden efter behov */
   }
+
+
+  @media screen and (min-width: 800px) {
+  
+  }
