@@ -46,4 +46,8 @@
   right: 0;
   margin-right: 1rem;
 }
+
+.grid {
+  padding-bottom: 8rem;
+}
 </style>
