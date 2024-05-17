@@ -36,7 +36,8 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  overflow: { // Ny prop til at bestemme om billedet skal overlappe
+  overflow: {
+    // Ny prop til at bestemme om billedet skal overlappe
     type: Boolean,
     default: false,
   },
@@ -44,19 +45,22 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="media_wrapper" :class="{
-    reverse: reverse,
-    vertical: vertical,
-    'hide-heading': hideHeading,
-    'about-us': aboutUs,
-    'overflow': overflow,
-  }">
+  <div
+    class="media_wrapper"
+    :class="{
+      reverse: reverse,
+      vertical: vertical,
+      'hide-heading': hideHeading,
+      'about-us': aboutUs,
+      overflow: overflow,
+    }"
+  >
     <h1 v-if="heading?.length" class="media_heading h2_poppins">
       {{ heading }}
     </h1>
     <div class="grid">
       <div class="media_text">
-        <h2 class="h3_poppins">{{ gridHeading }}</h2>
+        <h2 v-if="gridHeading.length" class="h3_poppins">{{ gridHeading }}</h2>
         <p v-if="gridTextTop.length" class="body_poppins">{{ gridTextTop }}</p>
         <p v-if="gridTextBottom.length" class="body_poppins">
           {{ gridTextBottom }}
@@ -103,6 +107,17 @@ const props = defineProps({
   &.about-us {
     .media_img {
       width: 100%;
+      height: 100%;
+      margin-top: 0;
+      translate: 0 50px;
+      object-fit: cover;
+    }
+
+    .media_text {
+      .body_poppins {
+        margin-top: 50px;
+        font-size: 30px;
+      }
     }
   }
 
@@ -124,8 +139,6 @@ const props = defineProps({
 .media_text {
   order: 1;
 }
-
-
 
 .media_img {
   width: 100%;
