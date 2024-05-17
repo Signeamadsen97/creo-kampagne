@@ -33,7 +33,7 @@ const props = defineProps({
   list-style: none;
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 50px;
+  gap: 70px;
   padding: 0;
   margin: 0 auto;
   width: 80%;

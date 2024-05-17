@@ -91,11 +91,11 @@ const props = defineProps({
 
     .grid {
       grid-template-columns: 1fr 1fr;
+      gap: 104px;
     }
 
     .media_text {
       order: 2;
-      padding-left: 104px;
     }
 
     .media_img {
@@ -105,6 +105,9 @@ const props = defineProps({
   }
 
   &.about-us {
+    @media screen and (max-width: 1000px) {
+      padding: 0;
+    }
     .media_img {
       width: 100%;
       height: 100%;
@@ -117,6 +120,19 @@ const props = defineProps({
       .body_poppins {
         margin-top: 50px;
         font-size: 30px;
+      }
+      @media screen and (max-width: 1000px) {
+        padding: 30px var(--wrapper-padding-x);
+      }
+    }
+    .grid {
+      @media screen and (max-width: 1000px) {
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        .media_img {
+          width: 100%;
+        }
       }
     }
   }

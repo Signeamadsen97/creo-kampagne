@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <div class="wrapper">
@@ -17,26 +16,28 @@
         </p>
       </div>
       <div class="img">
-        <img src="https://fakeimg.pl/467x549" alt="">
+        <img class="img_tib" src="https://fakeimg.pl/467x549" alt="" />
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .h2_poppins {
-    text-align: center;
+  text-align: center;
 }
 
 .wrapper {
-    background-color: aqua;
+  background-color: aqua;
+  display: grid;
 }
 
-
+.img_tib {
+  width: 100%;
+}
 </style>
