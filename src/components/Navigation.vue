@@ -4,19 +4,22 @@
 
 
 <template>
-<nav>
-    <ul>
-        <li><RouterLink class="logo" to="/">Kampagne Navn</RouterLink></li>
-        <li><RouterLink to="/about">Om Creo</RouterLink></li>
-    </ul>
-</nav>
-
+    <nav>
+        <ul>
+            <li>
+                <RouterLink class="logo h2_poppins" to="/">Boulevarden</RouterLink>
+            </li>
+            <li>
+                <RouterLink class="h3_poppins" to="/about">Om Creo</RouterLink>
+            </li>
+        </ul>
+    </nav>
 </template>
 
 
 <style scoped>
 nav {
-    background-color: green;
+    background-color: #FEFAE0;
     padding: 10px 65px;
 }
 
@@ -29,7 +32,6 @@ ul {
 }
 
 li a {
-    color: black;
     text-decoration: none;
     font-size: 30px;
 }
@@ -37,5 +39,4 @@ li a {
 .logo {
     font-size: 40px;
 }
-
 </style>
