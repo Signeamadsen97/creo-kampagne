@@ -17,5 +17,8 @@
   width: 100%;
   height: 325px;
   background-color: #D4D4AA;
+  position: relative;
+  z-index: 0;
+  margin-top: -30px;
 }
 </style>

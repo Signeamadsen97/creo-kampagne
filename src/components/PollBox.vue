@@ -5,9 +5,9 @@
     <h1>Giv os din mening så vi kan være ligeglade med hvad du tænker!</h1>
 
     <form>
-      <label><input type="radio"/>Lorem Ipsum is simply dummy text of the printing</label>
-      <label><input type="radio"/>Lorem Ipsum is simply dummy text of the printing</label>
-      <label><input type="radio"/>Lorem Ipsum is simply dummy text of the printing</label>
+      <label><input type="radio" />Lorem Ipsum is simply dummy text of the printing</label>
+      <label><input type="radio" />Lorem Ipsum is simply dummy text of the printing</label>
+      <label><input type="radio" />Lorem Ipsum is simply dummy text of the printing</label>
 
       <button type="submit">Send</button>
     </form>
@@ -15,24 +15,22 @@
 </template>
 
 <style scoped>
-
 .box_container {
-    display: grid;
-    padding: 71px 71px 51px 154px;
-    gap: 54px;
-    background-color: green;
+  display: grid;
+  padding: 71px 71px 51px 154px;
+  gap: 54px;
+  background-color: #FEFAE0;
 
 }
+
 form {
-    display: grid;
-    gap: 36px;
+  display: grid;
+  gap: 36px;
 
 }
 
 button {
-    width: max-content;
-    margin-left: auto;
+  width: max-content;
+  margin-left: auto;
 }
-
-
 </style>
