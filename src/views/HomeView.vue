@@ -6,9 +6,10 @@ import PageBreaker from "@/components/PageBreaker.vue";
 import TextBox from "@/components/TextBox.vue";
 import PollBox from "@/components/PollBox.vue";
 import CaruselSlider from "@/components/CaruselSlider.vue";
+import BeforeAfterImg from "@/components/BeforeAfterImg.vue";
 
 import { ref } from "vue";
-import BeforeAfterImg from "@/components/BeforeAfterImg.vue";
+
 
 const items = ref([
   {
@@ -65,7 +66,7 @@ const items = ref([
     <div class="text-media-grid">
       <TextMedia heading="Om os" grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
         grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
-        grid-image-src="https://fakeimg.pl/467x549" :overflow="true" />
+        grid-image-src="https://fakeimg.pl/467x549" />
       <TextMedia heading="" grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
         grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
         grid-image-src="https://fakeimg.pl/467x549" :reverse="true" />
@@ -81,8 +82,14 @@ const items = ref([
     </div>
 
     <CaruselSlider :slides="items" />
-    <BeforeAfterImg />
-    <BeforeAfterImg :reverse="true" />
+
+    <BeforeAfterImg mainHeading="" subHeading="Før og efter, hallo det er fedt"
+      bodyText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+      bigText="Måske en fed ting eller 2?" imageSrc="https://fakeimg.pl/853x568" />
+
+    <BeforeAfterImg :reverse="true" mainHeading="Reverseret Sektion" subHeading="Dette er en reverseret sektion"
+      bodyText="Dette er noget anderledes tekst for den reverserede sektion." bigText="Nogle store ord her!"
+      imageSrc="https://fakeimg.pl/853x568" />
   </main>
 </template>
 
