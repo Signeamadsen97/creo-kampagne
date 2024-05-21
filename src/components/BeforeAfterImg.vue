@@ -1,8 +1,5 @@
 <script setup>
-import { defineProps } from 'vue';
 import BeforeAfterSlider from './BeforeAfterSlider.vue';
-
-
 
 const props = defineProps({
   reverse: {
@@ -29,9 +26,13 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  imageSrc: {
+  beforeImage: {
     type: String,
-    default: "https://fakeimg.pl/853x568",
+    required: true,
+  },
+  afterImage: {
+    type: String,
+    required: true,
   },
 });
 </script>
@@ -45,13 +46,10 @@ const props = defineProps({
         <h2 class="h2_poppins">{{ subHeading }}</h2>
         <p class="body_poppins">{{ bodyText }}</p>
       </div>
-      <!-- <img :src="imageSrc" alt="beforeafterimg" class="image" />-->
       <div>
-        <BeforeAfterSlider 
-        beforeImage="path/to/before-image.jpg" 
-        afterImage="path/to/after-image.jpg" 
-         />
-    </div>
+        <!-- Brug BeforeAfterSlider komponenten med props til billeder -->
+        <BeforeAfterSlider :beforeImage="beforeImage" :afterImage="afterImage" />
+      </div>
       <h3 class="bigtext h1_poppins">{{ bigText }}</h3>
     </div>
   </div>
@@ -73,8 +71,6 @@ const props = defineProps({
         "bigtext image";
     }
   }
-
-
 }
 
 .grid {
@@ -94,13 +90,9 @@ const props = defineProps({
   grid-area: bigtext;
   display: flex;
   justify-content: center;
-  /* Center indholdet horisontalt */
   align-items: center;
-  /* Center indholdet vertikalt */
   text-align: center;
-  /* Centrer teksten */
 }
-
 
 .before_img {
   width: 100%;

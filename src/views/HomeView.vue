@@ -6,9 +6,16 @@ import PageBreaker from "@/components/PageBreaker.vue";
 import TextBox from "@/components/TextBox.vue";
 import PollBox from "@/components/PollBox.vue";
 import CaruselSlider from "@/components/CaruselSlider.vue";
-import BeforeAfterImg from "@/components/BeforeAfterImg.vue";
+
+import BeforeAfterImg from '@/components/BeforeAfterImg.vue';
+
+import beforeImage1 from '@/components/icon/before1.jpg';
+import afterImage1 from '@/components/icon/after1.jpg';
+import beforeImage2 from '@/components/icon/before2.jpg';
+import afterImage2 from '@/components/icon/after2.jpg';
 
 import { ref } from "vue";
+
 
 
 const items = ref([
@@ -85,11 +92,11 @@ const items = ref([
 
     <BeforeAfterImg mainHeading="" subHeading="Før og efter, hallo det er fedt"
       bodyText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-      bigText="Måske en fed ting eller 2?" imageSrc="https://fakeimg.pl/853x568" />
+      bigText="Måske en fed ting eller 2?" :beforeImage="beforeImage1" :afterImage="afterImage1" />
 
     <BeforeAfterImg :reverse="true" mainHeading="Reverseret Sektion" subHeading="Dette er en reverseret sektion"
       bodyText="Dette er noget anderledes tekst for den reverserede sektion." bigText="Nogle store ord her!"
-      imageSrc="https://fakeimg.pl/853x568" />
+      :beforeImage="beforeImage2" :afterImage="afterImage2" />
   </main>
 </template>
 

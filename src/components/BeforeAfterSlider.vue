@@ -12,7 +12,8 @@ const props = defineProps({
     },
 });
 
-const beforeWidth = ref('50%');
+const beforeWidth = ref('100%');
+const afterWidth = ref('0%');
 const isSliding = ref(false);
 const sliderWrapper = ref(null);
 const sliderHandle = ref(null);
@@ -28,7 +29,8 @@ const onSlide = (event) => {
     const rect = sliderWrapper.value.getBoundingClientRect();
     const offsetX = event.clientX - rect.left;
     const width = rect.width;
-    beforeWidth.value = `${(offsetX / width) * 100}%`;
+    beforeWidth.value = `${100 - (offsetX / width) * 100}%`;
+    afterWidth.value = `${(offsetX / width) * 100}%`;
 };
 
 const stopSlide = () => {
@@ -52,10 +54,10 @@ onBeforeUnmount(() => {
     <div class="slider-container">
         <div class="slider-wrapper" ref="sliderWrapper">
             <div class="slider-img slider-img-before" :style="{ width: beforeWidth }">
-                <img :src="beforeImage" alt="Before">
+                <img :src="props.beforeImage" alt="Before">
             </div>
-            <div class="slider-img slider-img-after">
-                <img :src="afterImage" alt="After">
+            <div class="slider-img slider-img-after" :style="{ width: afterWidth }">
+                <img :src="props.afterImage" alt="After">
             </div>
             <div class="slider-handle" ref="sliderHandle" @mousedown="startSlide"></div>
         </div>
@@ -92,6 +94,12 @@ onBeforeUnmount(() => {
 .slider-img-before {
     overflow: hidden;
     white-space: nowrap;
+    user-select: none;
+}
+
+.slider-img-after {
+    user-select: none;
+    /* Forhindrer markering af billedet */
 }
 
 .slider-handle {
@@ -106,3 +114,5 @@ onBeforeUnmount(() => {
     z-index: 1;
 }
 </style>
+
+
