@@ -1,4 +1,9 @@
 <script setup>
+import { defineProps } from 'vue';
+import BeforeAfterSlider from './BeforeAfterSlider.vue';
+
+
+
 const props = defineProps({
   reverse: {
     type: Boolean,
@@ -10,19 +15,19 @@ const props = defineProps({
   },
   mainHeading: {
     type: String,
-    default: "Fremtiden på OUH",
+    default: "",
   },
   subHeading: {
     type: String,
-    default: "Før og efter, hallo det er fedt",
+    default: "",
   },
   bodyText: {
     type: String,
-    default: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    default: "",
   },
   bigText: {
     type: String,
-    default: "Måske en fed ting eller 2?",
+    default: "",
   },
   imageSrc: {
     type: String,
@@ -40,7 +45,13 @@ const props = defineProps({
         <h2 class="h2_poppins">{{ subHeading }}</h2>
         <p class="body_poppins">{{ bodyText }}</p>
       </div>
-      <img :src="imageSrc" alt="beforeafterimg" class="image" />
+      <!-- <img :src="imageSrc" alt="beforeafterimg" class="image" />-->
+      <div>
+        <BeforeAfterSlider 
+        beforeImage="path/to/before-image.jpg" 
+        afterImage="path/to/after-image.jpg" 
+         />
+    </div>
       <h3 class="bigtext h1_poppins">{{ bigText }}</h3>
     </div>
   </div>
