@@ -11,9 +11,9 @@
     </div>
 
     <div>
-      <h1 class="hero_1 h1_poppins">Hero tekts</h1>
+      <h1 class="hero_1 h1_poppins">Boulevarden Odense</h1>
       <img class="heromedia" src="https://fakeimg.pl/982x589" alt="" />
-      <h1 class="hero_2 h1_poppins ">Hero tekst</h1>
+      <h1 class="hero_2 h1_poppins ">Dit nye område midt i byen</h1>
     </div>
   </div>
 </template>
@@ -29,6 +29,7 @@
 
 .heromedia {
   width: 100%;
+  z-index: 0;
 }
 
 .hero-container {
@@ -41,10 +42,17 @@
   padding-top: 10rem;
 }
 
+.hero_1 {
+  margin-left: -3rem;
+  margin-bottom: -25px;
+  z-index: 1;
+}
+
 .hero_2 {
   position: absolute;
   right: 0;
   margin-right: 1rem;
+  margin-top: -75px;
 }
 
 .grid {

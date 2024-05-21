@@ -90,13 +90,13 @@ const items = ref([
 
     <CaruselSlider :slides="items" />
 
-    <BeforeAfterImg mainHeading="" subHeading="Før og efter, hallo det er fedt"
-      bodyText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-      bigText="Måske en fed ting eller 2?" :beforeImage="beforeImage1" :afterImage="afterImage1" />
+    <BeforeAfterImg mainHeading="" subHeading="Charmerende lejligheder i de gamle rødstensbygninger"
+      bodyText="Kunne du forestille dig at bo i en af de tidligste hospitalsbygninger. De gamle smukke rødstenbygninger har potentiale til at forme rammerne for at fantastisk hjem, midt i byen nær mange grønne områder,"
+      bigText="Kunne du forestille dig at bo her?" :beforeImage="beforeImage1" :afterImage="afterImage1" />
 
-    <BeforeAfterImg :reverse="true" mainHeading="Reverseret Sektion" subHeading="Dette er en reverseret sektion"
-      bodyText="Dette er noget anderledes tekst for den reverserede sektion." bigText="Nogle store ord her!"
-      :beforeImage="beforeImage2" :afterImage="afterImage2" />
+    <BeforeAfterImg :reverse="true" mainHeading="" subHeading="Nyd din kaffe under blåregnen"
+      bodyText="Områderne omkring det gamle hospital byder på mange muligheder. blandt andet denne smukke plads, som med fordel kunne blive en cafe eler et samlingsområde. Her kunne man nyde sin, frkost, kaffe eller andet, under den smukke blåregn"
+      bigText="Kunne du forestille dig at drikke din kaffe her?" :beforeImage="beforeImage2" :afterImage="afterImage2" />
   </main>
 </template>
 

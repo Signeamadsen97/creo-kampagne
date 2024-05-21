@@ -109,7 +109,10 @@ const props = defineProps({
   &.overflow {
     .media_img {
       z-index: 1;
-      margin-bottom: -200px;
+      position: relative;
+      /* Tilføjet */
+      margin-bottom: -90px;
+      /* Juster margenen efter behov */
     }
   }
 }
@@ -123,8 +126,6 @@ const props = defineProps({
 .media_text {
   order: 1;
 }
-
-
 
 .media_img {
   width: 100%;
