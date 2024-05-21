@@ -51,6 +51,11 @@ const props = defineProps({
         <BeforeAfterSlider :beforeImage="beforeImage" :afterImage="afterImage" />
       </div>
       <h3 class="bigtext h1_poppins">{{ bigText }}</h3>
+      <div class="feedback-section">
+        <button class="feedback-button">Like</button>
+        <span class="feedback-text h3_poppins">Hvad synes du</span>
+        <button class="feedback-button">Dislike</button>
+      </div>
     </div>
   </div>
 </template>
@@ -93,6 +98,27 @@ const props = defineProps({
   align-items: center;
   text-align: center;
 }
+
+.feedback-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.feedback-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.feedback-button:hover {
+  background-color: #0056b3;
+}
+
 
 .before_img {
   width: 100%;
