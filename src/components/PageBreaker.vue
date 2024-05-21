@@ -19,6 +19,6 @@
   background-color: #D4D4AA;
   position: relative;
   z-index: 0;
-  margin-top: -30px;
+  margin-top: -50px;
 }
 </style>

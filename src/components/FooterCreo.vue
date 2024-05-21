@@ -36,9 +36,10 @@
 
 <style scoped>
 .footer_wrapper {
-  background-color: lightgreen;
+  background-color: #FEFAE0;
   padding: 50px var(--wrapper-padding-x);
 }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -47,6 +48,7 @@
     "text list"
     ". some";
 }
+
 .some_img {
   display: flex;
   gap: 25px;
@@ -67,6 +69,4 @@
 .text {
   grid-area: text;
 }
-
-
 </style>
