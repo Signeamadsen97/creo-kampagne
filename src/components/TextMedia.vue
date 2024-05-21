@@ -139,9 +139,8 @@ const props = defineProps({
 
   &.overflow {
     .media_img {
-      position: relative;
       z-index: 1;
-      margin-bottom: -100px;
+      margin-bottom: -200px;
     }
   }
 }
