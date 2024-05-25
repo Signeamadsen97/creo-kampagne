@@ -78,6 +78,9 @@ const props = defineProps({
   &.reverse {
     .media_text {
       order: 2;
+      @media screen and (max-width: 900px) {
+        order: -1;
+      }
     }
 
     .media_img {
@@ -92,6 +95,10 @@ const props = defineProps({
     .grid {
       grid-template-columns: 1fr 1fr;
       gap: 104px;
+
+      @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+      }
     }
 
     .media_text {

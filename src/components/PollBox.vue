@@ -1,13 +1,52 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+import InputField from "@/components/input/InputField.vue";
+
+const currentVote = ref(null);
+
+function handleChange(value) {
+  currentVote.value = value;
+}
+
+function submit() {
+  console.log("jubii :-)");
+}
+</script>
 
 <template>
   <div class="box_container">
-    <h1>Giv os din mening så vi kan være ligeglade med hvad du tænker!</h1>
+    <h1 class="h2_poppins">
+      Giv os din mening så vi kan være ligeglade med hvad du tænker!
+    </h1>
+    currentVote: {{ currentVote }}
+    <form @submit.prevent="submit">
+      <InputField
+        label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
+        name="vote"
+        value="option 1"
+        @changed="handleChange"
+      />
 
-    <form>
-      <label><input type="radio" />Lorem Ipsum is simply dummy text of the printing</label>
-      <label><input type="radio" />Lorem Ipsum is simply dummy text of the printing</label>
-      <label><input type="radio" />Lorem Ipsum is simply dummy text of the printing</label>
+      <InputField
+        label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
+        name="vote"
+        value="option 2"
+        @changed="handleChange"
+      />
+
+      <InputField
+        label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
+        name="vote"
+        value="option 3"
+        @changed="handleChange"
+      />
+
+      <InputField
+        label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
+        name="vote"
+        value="option 4"
+        @changed="handleChange"
+      />
 
       <button type="submit">Send</button>
     </form>
@@ -19,14 +58,12 @@
   display: grid;
   padding: 71px 71px 51px 154px;
   gap: 54px;
-  background-color: #FEFAE0;
-
+  background-color: #fefae0;
 }
 
 form {
   display: grid;
   gap: 36px;
-
 }
 
 button {

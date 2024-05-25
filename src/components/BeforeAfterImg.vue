@@ -1,5 +1,5 @@
 <script setup>
-import BeforeAfterSlider from './BeforeAfterSlider.vue';
+import BeforeAfterSlider from "./BeforeAfterSlider.vue";
 
 const props = defineProps({
   reverse: {
@@ -48,7 +48,10 @@ const props = defineProps({
       </div>
       <div>
         <!-- Brug BeforeAfterSlider komponenten med props til billeder -->
-        <BeforeAfterSlider :beforeImage="beforeImage" :afterImage="afterImage" />
+        <BeforeAfterSlider
+          :beforeImage="beforeImage"
+          :afterImage="afterImage"
+        />
       </div>
       <h3 class="bigtext h1_poppins">{{ bigText }}</h3>
       <div class="feedback-section">
@@ -62,7 +65,7 @@ const props = defineProps({
 
 <style scoped lang="scss">
 .wrapper {
-  background-color: #D4D4AA;
+  background-color: #d4d4aa;
   padding: 50px var(--wrapper-padding-x);
   margin-top: 80px;
 
@@ -87,6 +90,11 @@ const props = defineProps({
     "image bigtext";
   width: 100%;
   column-gap: 20px;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .bigtext {
@@ -97,6 +105,9 @@ const props = defineProps({
   justify-content: center;
   align-items: center;
   text-align: center;
+  @media screen and (max-width: 900px) {
+   font-size: 60px;
+  }
 }
 
 .feedback-section {
@@ -118,7 +129,6 @@ const props = defineProps({
 .feedback-button:hover {
   background-color: #0056b3;
 }
-
 
 .before_img {
   width: 100%;
