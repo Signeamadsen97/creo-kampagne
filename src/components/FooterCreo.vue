@@ -51,6 +51,12 @@
   grid-template-areas:
     "text list"
     ". some";
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    grid-template-areas: none;
+  }
 }
 
 .some_img {
@@ -74,12 +80,23 @@ a:hover img {
   h3 {
     padding-bottom: 40px;
   }
+
+  @media screen and (max-width: 750px) {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 }
 
 .text {
   grid-area: text;
   color: #606c38;
   font-size: 45px;
+
+  @media screen and (max-width: 900px) {
+    margin-bottom: 70px;
+  }
 }
 
 li {
