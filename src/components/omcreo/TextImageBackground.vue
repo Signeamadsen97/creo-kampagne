@@ -2,11 +2,13 @@
 
 <template>
   <div class="wrapper">
-    <h2 class="h2_poppins">Hero text</h2>
-    <h2 class="h2_poppins">Hero text</h2>
+    <div>
+      <h2 class="h2_poppins ">Hero text</h2>
+      <h2 class="h2_poppins">Hero text</h2>
+    </div>
     <div class="grid">
       <div class="text">
-        <p>
+        <p class="body_poppins">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
           deserunt suscipit blanditiis nihil nostrum possimus voluptatem sit
           exercitationem porro quibusdam quae velit, quis ullam aliquid
@@ -33,7 +35,7 @@
 }
 
 .wrapper {
-  background-color: aqua;
+  background-color: #FEFAE0;
   display: grid;
 }
 

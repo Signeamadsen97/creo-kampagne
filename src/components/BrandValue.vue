@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <h1 class="h2_poppins">Brand værdi</h1>
+  <h1 class="h2_poppins">Vi tror på</h1>
   <div class="brand_wrapper">
     <div class="grid">
       <img src="https://fakeimg.pl/251x181" alt="" />
@@ -23,7 +23,9 @@
   width: 100%;
 }
 
-h1 {}
+.h2_poppins {
+  margin-left: 65px;
+}
 
 .brand_wrapper {
   padding: var(--wrapper-padding);

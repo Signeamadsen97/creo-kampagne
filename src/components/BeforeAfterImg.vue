@@ -53,11 +53,11 @@ const props = defineProps({
       <h3 class="bigtext h1_poppins">{{ bigText }}</h3>
       <div class="feedback-section">
         <button class="feedback-button like-button">
-          <img src="./icon/" alt="Like" class="feedback-image">
+          <img src="./icon/like.png" alt="Like" class="feedback-image">
         </button>
         <span class="feedback-text h3_poppins">Hvad synes du</span>
         <button class="feedback-button dislike-button">
-          <img src="dislike.png" alt="Dislike" class="feedback-image">
+          <img src="./icon/dislike.png" alt="Dislike" class="feedback-image">
         </button>
       </div>
     </div>
@@ -121,16 +121,20 @@ const props = defineProps({
 }
 
 .feedback-button {
-  background-color: #007bff;
-  color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  background: none;
 }
 
-.feedback-button:hover {
-  background-color: #0056b3;
+.feedback-image {
+  width: 50px;
+  /* Juster størrelsen efter behov */
+  height: auto;
 }
+
+
+.feedback-button:hover {}
 
 .before_img {
   width: 100%;

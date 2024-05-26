@@ -45,16 +45,13 @@ const props = defineProps({
 </script>
 
 <template>
-  <div
-    class="media_wrapper"
-    :class="{
-      reverse: reverse,
-      vertical: vertical,
-      'hide-heading': hideHeading,
-      'about-us': aboutUs,
-      overflow: overflow,
-    }"
-  >
+  <div class="media_wrapper" :class="{
+    reverse: reverse,
+    vertical: vertical,
+    'hide-heading': hideHeading,
+    'about-us': aboutUs,
+    overflow: overflow,
+  }">
     <h1 v-if="heading?.length" class="media_heading h2_poppins">
       {{ heading }}
     </h1>
@@ -78,8 +75,13 @@ const props = defineProps({
   &.reverse {
     .media_text {
       order: 2;
+
       @media screen and (max-width: 900px) {
         order: -1;
+      }
+
+      .h3_poppins {
+        padding-top: 20px;
       }
     }
 
@@ -115,6 +117,7 @@ const props = defineProps({
     @media screen and (max-width: 1000px) {
       padding: 0;
     }
+
     .media_img {
       width: 100%;
       height: 100%;
@@ -128,10 +131,12 @@ const props = defineProps({
         margin-top: 50px;
         font-size: 30px;
       }
+
       @media screen and (max-width: 1000px) {
         padding: 30px var(--wrapper-padding-x);
       }
     }
+
     .grid {
       @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr;
