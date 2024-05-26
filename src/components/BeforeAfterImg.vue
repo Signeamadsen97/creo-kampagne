@@ -48,16 +48,17 @@ const props = defineProps({
       </div>
       <div>
         <!-- Brug BeforeAfterSlider komponenten med props til billeder -->
-        <BeforeAfterSlider
-          :beforeImage="beforeImage"
-          :afterImage="afterImage"
-        />
+        <BeforeAfterSlider :beforeImage="beforeImage" :afterImage="afterImage" />
       </div>
       <h3 class="bigtext h1_poppins">{{ bigText }}</h3>
       <div class="feedback-section">
-        <button class="feedback-button">Like</button>
+        <button class="feedback-button like-button">
+          <img src="./icon/" alt="Like" class="feedback-image">
+        </button>
         <span class="feedback-text h3_poppins">Hvad synes du</span>
-        <button class="feedback-button">Dislike</button>
+        <button class="feedback-button dislike-button">
+          <img src="dislike.png" alt="Dislike" class="feedback-image">
+        </button>
       </div>
     </div>
   </div>
@@ -105,8 +106,9 @@ const props = defineProps({
   justify-content: center;
   align-items: center;
   text-align: center;
+
   @media screen and (max-width: 900px) {
-   font-size: 60px;
+    font-size: 60px;
   }
 }
 
