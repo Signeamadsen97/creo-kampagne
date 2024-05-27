@@ -36,11 +36,11 @@ const profiles = [
       grid-image-src="https://fakeimg.pl/696x496"
     />
     <section id="why_do">
-    <TextImageBackground />
-  </section>
-  <section id="we_are">
-    <HvemErVi :profiles="profiles" />
-  </section>
+      <TextImageBackground />
+    </section>
+    <section id="we_are">
+      <HvemErVi :profiles="profiles" />
+    </section>
   </div>
 </template>
 

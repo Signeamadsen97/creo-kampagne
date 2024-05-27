@@ -27,8 +27,8 @@
   margin-top: 50px;
 
   @media screen and (max-width: 850px) {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
 }

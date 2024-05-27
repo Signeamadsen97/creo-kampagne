@@ -77,10 +77,9 @@ const breakpoints = {
 <style scoped lang="scss">
 .slider-box {
   --vc-nav-color: green;
-  --vc-icn-width: 100px;
+  
   padding-top: 114px;
 }
-
 .slide {
   display: grid;
   gap: 10px;

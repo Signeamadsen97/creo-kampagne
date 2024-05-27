@@ -1,31 +1,94 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
   <div class="footer_wrapper">
     <div class="grid">
       <p class="text">
-        Boulevarden bringer samfundet sammen og styrker tilliden gennem samarbejde.
+        Boulevarden bringer samfundet sammen og styrker tilliden gennem
+        samarbejde.
       </p>
       <div class="list">
         <ul>
-          <h3 class="h3_poppins">Forside</h3>
+          <RouterLink to="/"><h3 class="h3_poppins">Forside</h3></RouterLink>
           <div class="body_poppins">
-            <a href="#introduction_video"><li>Introduktion video</li></a>
-            <a href="#about_project"><li>Om os</li></a>
-            <a href="#interview_video"><li>Se hvad andre tænker</li></a>
-            <a href="#poll_text"><li>Giv os din mening</li></a>
-            <a href="#before_image"><li>Før og efter billeder</li></a>
+            <li>
+              <RouterLink
+                class="footer-link"
+                :to="{
+                  path: '/',
+                  query: { scrollTo: 'introduction_video' },
+                }"
+              >
+                Om os
+              </RouterLink>
+            </li>
+
+            <li>
+              <RouterLink
+                class="footer-link"
+                :to="{ path: '/', query: { scrollTo: 'about_project' } }"
+              >
+                Om projektet
+              </RouterLink>
+            </li>
+
+            <li>
+              <RouterLink
+                class="footer-link"
+                :to="{ path: '/', query: { scrollTo: 'interview_video' } }"
+              >
+                Hør hvad andre tænker
+              </RouterLink>
+            </li>
+
+            <li>
+              <RouterLink
+                class="footer-link"
+                :to="{ path: '/', query: { scrollTo: 'poll_text' } }"
+              >
+                Giv os din mening
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                class="footer-link"
+                :to="{ path: '/', query: { scrollTo: 'before_image' } }"
+              >
+                Før og efter billeder
+              </RouterLink>
+            </li>
           </div>
         </ul>
 
         <ul>
-          <h3 class="h3_poppins">Om Creo</h3>
+          <RouterLink to="/about"><h3 class="h3_poppins">Om Creo</h3></RouterLink>
           <div class="body_poppins">
-            <a href="aboutview.vue.html#who_we"><li>Hvem er vi</li></a>
-            <a href=""><li>Hvorfor vil vi det her</li></a>
-            <a href=""><li>Profiler fra Creo</li></a>
+            <li>
+              <RouterLink
+                class="footer-link"
+                :to="{ path: 'about', query: { scrollTo: 'who_we' } }"
+              >
+                Om os
+              </RouterLink>
+            </li>
+
+            <li>
+              <RouterLink
+                class="footer-link"
+                :to="{ path: 'about', query: { scrollTo: 'why_do' } }"
+              >
+                Hvorfor vil vi det gerne
+              </RouterLink>
+            </li>
+
+            <li>
+              <RouterLink
+                class="footer-link"
+                :to="{ path: 'about', query: { scrollTo: 'we_are' } }"
+              >
+                Mere om os
+              </RouterLink>
+            </li>
           </div>
         </ul>
       </div>
@@ -102,18 +165,24 @@ a:hover img {
 }
 
 li {
-  display: flex;
   margin-bottom: 25px;
   font-size: 19px;
 }
 
 a {
   text-decoration: none;
+}
+
+.footer-link {
   color: #606c38;
 }
 
 a:hover {
   color: black;
-  font-weight: 800;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
 }
 </style>
