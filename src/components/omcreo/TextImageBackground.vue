@@ -3,8 +3,8 @@
 <template>
   <div class="wrapper">
     <div>
-      <h2 class="h2_poppins ">Hero text</h2>
-      <h2 class="h2_poppins">Hero text</h2>
+      <h2 class="h1_poppins ">Hero text</h2>
+      <h2 class="h1_poppins">Hero text</h2>
     </div>
     <div class="grid">
       <div class="text">
@@ -30,8 +30,13 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.h2_poppins {
+.h1_poppins {
   text-align: center;
+  padding-bottom: 30px;
+}
+
+.body_poppins {
+  width: 600px;
 }
 
 .wrapper {

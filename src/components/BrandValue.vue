@@ -4,7 +4,7 @@
   <h1 class="h2_poppins">Vi tror på</h1>
   <div class="brand_wrapper">
     <div class="grid">
-      <img src="https://fakeimg.pl/251x181" alt="" />
+      <img src="./icon/" alt="" />
       <img src="https://fakeimg.pl/251x181" alt="" />
       <img src="https://fakeimg.pl/251x181" alt="" />
       <img src="https://fakeimg.pl/251x181" alt="" />
