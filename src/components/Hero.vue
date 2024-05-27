@@ -3,7 +3,7 @@
 <template>
   <div class="grid">
     <div>
-      <p class="header_text body_poppins">
+      <p class="body_poppins">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s,
@@ -23,6 +23,14 @@
   display: grid;
   grid-template-columns: 19.95841995841996dvw 68.05266805266805dvw;
   gap: 3.049203049203049dvw;
+  padding-bottom: 8rem;
+  margin-top: 50px;
+
+  @media screen and (max-width: 850px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
 }
 
 
@@ -32,30 +40,50 @@
   z-index: 0;
 }
 
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.header_text {
+.body_poppins {
   padding-top: 10rem;
+  font-weight: 400;
+  font-size: 25px;
+  color: black;
+
+  @media screen and (max-width: 850px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 0;
+    order: 2;
+  }
 }
 
 .hero_1 {
+  position: absolute;
   margin-left: -3rem;
-  margin-bottom: -25px;
-  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  @media screen and (max-width: 1200px) {
+    display: grid;
+    transform: none;
+    left: auto;
+    text-align: start;
+    font-size: 25px;
+  }
 }
 
 .hero_2 {
   position: absolute;
   right: 0;
   margin-right: 1rem;
-  margin-top: -75px;
+  margin-top: -49px;
+
+  @media screen and (max-width: 1200px) {
+    display: grid;
+    transform: none;
+    left: auto;
+    text-align: start;
+    font-size: 25px;
+    margin-top: -39px;
+  }
 }
 
-.grid {
-  padding-bottom: 8rem;
-}
+
 </style>

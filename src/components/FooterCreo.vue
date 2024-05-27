@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+
+</script>
 
 <template>
   <div class="footer_wrapper">
@@ -22,8 +24,8 @@
           <h3 class="h3_poppins">Om Creo</h3>
           <div class="body_poppins">
             <a href="aboutview.vue.html#who_we"><li>Hvem er vi</li></a>
-            <a href="#why_do"><li>Hvorfor vil vi det her</li></a>
-            <a href="#we_are"><li>Profiler fra Creo</li></a>
+            <a href=""><li>Hvorfor vil vi det her</li></a>
+            <a href=""><li>Profiler fra Creo</li></a>
           </div>
         </ul>
       </div>

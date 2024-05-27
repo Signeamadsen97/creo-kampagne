@@ -17,6 +17,9 @@
 nav {
   background-color: #fefae0;
   padding: 10px 65px;
+  @media screen and (max-width: 520px) {
+    padding: 4px 20px;
+  }
 }
 
 ul {
@@ -30,9 +33,17 @@ ul {
 li a {
   text-decoration: none;
   font-size: 30px;
+
+  @media screen and (max-width: 520px) {
+    font-size: 20px;
+  }
 }
 
 .logo {
   font-size: 40px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 25px;
+  }
 }
 </style>
