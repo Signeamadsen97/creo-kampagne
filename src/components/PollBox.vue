@@ -1,15 +1,33 @@
 <script setup>
 import { ref } from "vue";
 import InputField from "@/components/input/InputField.vue";
+import { getFirestore, setDoc, doc } from "firebase/firestore";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import firebaseConfig from "@/utils/db.js";
+import { v4 as uuidv4 } from "uuid";
 
+const emit = defineEmits(["vote"]);
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 const currentVote = ref(null);
 
 function handleChange(value) {
   currentVote.value = value;
 }
 
-function submit() {
-  console.log("jubii :-)");
+async function submit() {
+  try {
+    await setDoc(doc(db, "poll", uuidv4()), {
+      vote: currentVote.value,
+    });
+  } catch (e) {
+    console.warn("error", e);
+  }
+
+  emit("vote", currentVote.value);
+  alert("Din stemme er indsendt 😊");
 }
 </script>
 
@@ -18,7 +36,6 @@ function submit() {
     <h1 class="h2_poppins">
       Giv os din mening så vi kan være ligeglade med hvad du tænker!
     </h1>
-    currentVote: {{ currentVote }}
     <form @submit.prevent="submit">
       <InputField
         label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
@@ -76,7 +93,7 @@ form {
 
 button {
   background-clip: padding-box;
-  background-color: #EDB458;
+  background-color: #edb458;
   border: 1px solid transparent;
   border-radius: 0.25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;

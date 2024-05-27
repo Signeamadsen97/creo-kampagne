@@ -30,7 +30,13 @@ const breakpoints = {
       <slide v-for="slide in slides" :key="slide">
         <div class="slide">
           <img :src="slide.image.src" :alt="slide.image.alt" />
-          <p class="body_poppins">{{ slide.text }}</p>
+          <p class="body_poppins slide_text">
+            <span>{{ slide.text1 }}</span>
+            &nbsp;
+            <span>{{ slide.votes }}</span
+            >&nbsp;
+            <span>{{ slide.text2 }}</span>
+          </p>
         </div>
       </slide>
 
@@ -77,7 +83,7 @@ const breakpoints = {
 <style scoped lang="scss">
 .slider-box {
   --vc-nav-color: green;
-  
+
   padding-top: 114px;
 }
 .slide {
@@ -90,6 +96,7 @@ const breakpoints = {
     aspect-ratio: 16/9;
   }
 }
+
 h1 {
   text-align: center;
   margin-bottom: 40px;

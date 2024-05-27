@@ -1,4 +1,5 @@
 <script setup>
+import { getFirestore, collection, getDocs } from "firebase/firestore";
 import Hero from "@/components/Hero.vue";
 import BrandValue from "@/components/BrandValue.vue";
 import TextMedia from "@/components/TextMedia.vue";
@@ -14,39 +15,108 @@ import afterImage1 from "@/components/icon/after1.jpg";
 import beforeImage2 from "@/components/icon/before2.jpg";
 import afterImage2 from "@/components/icon/after2.jpg";
 
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import TwoColumnGrid from "@/components/TwoColumnGrid.vue";
+
+import { initializeApp } from "firebase/app";
+import firebaseConfig from "@/utils/db.js";
+
+const poll = ref();
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+async function getPollResults() {
+  const db = getFirestore(app);
+  const dbPoll = collection(db, "poll");
+  const poll = await getDocs(dbPoll);
+  const pollResultList = poll.docs.map((doc) => doc.data());
+
+  return pollResultList;
+}
 
 const items = ref([
   {
-    text: "Lorem Ipsum is simply dummy text of the printing",
+    text1: `Der er i alt`,
+    text2: `som har stemt det samme som dig`,
+    image: {
+      src: "https://fakeimg.pl/467x549",
+      alt: "Billede 1",
+    },
+    votes: 0,
+  },
+  {
+    text1: `Der er i alt`,
+    text2: `som har stemt det samme som dig`,
+    votes: 0,
     image: {
       src: "https://fakeimg.pl/467x549",
       alt: "Billede 1",
     },
   },
   {
-    text: "Lorem Ipsum is simply dummy text of the printing",
+    text1: "Der er i alt",
+    text2: `som har stemt det samme som dig`,
+    votes: 0,
     image: {
       src: "https://fakeimg.pl/467x549",
-      alt: "Billede 2",
+      alt: "Billede 1",
     },
   },
   {
-    text: "Lorem Ipsum is simply dummy text of the printing",
+    text1: "Der er i alt",
+    text2: `som har stemt det samme som dig`,
+    votes: 0,
     image: {
       src: "https://fakeimg.pl/467x549",
-      alt: "Billede 3",
-    },
-  },
-  {
-    text: "Lorem Ipsum is simply dummy text of the printing",
-    image: {
-      src: "https://fakeimg.pl/467x549",
-      alt: "Billede 4",
+      alt: "Billede 1",
     },
   },
 ]);
+
+function calculateVotes(votes) {
+  votes.map((vote) => {
+    switch (vote.vote) {
+      case "option 1":
+        items.value[0].votes++;
+        break;
+      case "option 2":
+        items.value[1].votes++;
+        break;
+      case "option 3":
+        items.value[2].votes++;
+        break;
+      case "option 4":
+        items.value[3].votes++;
+        break;
+      default:
+        break;
+    }
+  });
+}
+
+function handleVote(vote) {
+  switch (vote) {
+    case "option 1":
+      items.value[0].votes++;
+      break;
+    case "option 2":
+      items.value[1].votes++;
+      break;
+    case "option 3":
+      items.value[2].votes++;
+      break;
+    case "option 4":
+      items.value[3].votes++;
+      break;
+    default:
+      break;
+  }
+}
+
+onMounted(async () => {
+  const votes = await getPollResults();
+  calculateVotes(votes);
+});
 </script>
 
 <template>
@@ -96,32 +166,32 @@ const items = ref([
         </template>
 
         <template #col-2>
-          <PollBox />
+          <PollBox @vote="handleVote" />
         </template>
       </TwoColumnGrid>
     </section>
 
     <CaruselSlider :slides="items" />
     <section id="before_image">
-    <BeforeAfterImg
-      mainHeading=""
-      subHeading="Charmerende lejligheder i de gamle rødstensbygninger"
-      bodyText="Kunne du forestille dig at bo i en af de tidligste hospitalsbygninger. De gamle smukke rødstenbygninger har potentiale til at forme rammerne for at fantastisk hjem, midt i byen nær mange grønne områder,"
-      bigText="Kunne du forestille dig at bo her?"
-      :beforeImage="beforeImage1"
-      :afterImage="afterImage1"
-    />
+      <BeforeAfterImg
+        mainHeading=""
+        subHeading="Charmerende lejligheder i de gamle rødstensbygninger"
+        bodyText="Kunne du forestille dig at bo i en af de tidligste hospitalsbygninger. De gamle smukke rødstenbygninger har potentiale til at forme rammerne for at fantastisk hjem, midt i byen nær mange grønne områder,"
+        bigText="Kunne du forestille dig at bo her?"
+        :beforeImage="beforeImage1"
+        :afterImage="afterImage1"
+      />
 
-    <BeforeAfterImg
-      :reverse="true"
-      mainHeading=""
-      subHeading="Nyd din kaffe under blåregnen"
-      bodyText="Områderne omkring det gamle hospital byder på mange muligheder. blandt andet denne smukke plads, som med fordel kunne blive en cafe eler et samlingsområde. Her kunne man nyde sin, frkost, kaffe eller andet, under den smukke blåregn"
-      bigText="Kunne du forestille dig at drikke din kaffe her?"
-      :beforeImage="beforeImage2"
-      :afterImage="afterImage2"
-    />
-  </section>
+      <BeforeAfterImg
+        :reverse="true"
+        mainHeading=""
+        subHeading="Nyd din kaffe under blåregnen"
+        bodyText="Områderne omkring det gamle hospital byder på mange muligheder. blandt andet denne smukke plads, som med fordel kunne blive en cafe eler et samlingsområde. Her kunne man nyde sin, frkost, kaffe eller andet, under den smukke blåregn"
+        bigText="Kunne du forestille dig at drikke din kaffe her?"
+        :beforeImage="beforeImage2"
+        :afterImage="afterImage2"
+      />
+    </section>
   </main>
 </template>
 
