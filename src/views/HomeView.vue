@@ -51,51 +51,58 @@ const items = ref([
 
 <template>
   <main>
-    <div class="wrapper">
-      <Hero />
-    </div>
+    <section id="introduction_video">
+      <div class="wrapper">
+        <Hero />
+      </div>
+    </section>
     <BrandValue />
-    <TwoColumnGrid>
-      <template #col-1>
-      <TextMedia
-        heading="Om os"
-        grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
-        grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
-        grid-image-src="https://fakeimg.pl/467x549"
-      />
-    </template>
-    <template #col-2>
+    <section id="about_project">
+      <TwoColumnGrid>
+        <template #col-1>
+          <TextMedia
+            heading="Om os"
+            grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
+            grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
+            grid-image-src="https://fakeimg.pl/467x549"
+          />
+        </template>
+        <template #col-2>
+          <TextMedia
+            heading=""
+            grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
+            grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
+            grid-image-src="https://fakeimg.pl/467x549"
+            :reverse="true"
+          />
+        </template>
+      </TwoColumnGrid>
+    </section>
+    <PageBreaker />
+    <section id="interview_video">
       <TextMedia
         heading=""
         grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
         grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
-        grid-image-src="https://fakeimg.pl/467x549"
-        :reverse="true"
+        grid-text-bottom="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
+        grid-image-src="https://fakeimg.pl/774x516"
+        :vertical="true"
       />
-    </template>
-    </TwoColumnGrid>
-    <PageBreaker />
-    <TextMedia
-      heading=""
-      grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
-      grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
-      grid-text-bottom="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
-      grid-image-src="https://fakeimg.pl/774x516"
-      :vertical="true"
-    />
+    </section>
+    <section id="poll_text">
+      <TwoColumnGrid second-column-width="1.5fr">
+        <template #col-1>
+          <TextBox />
+        </template>
 
-    <TwoColumnGrid second-column-width="1.5fr">
-      <template #col-1>
-        <TextBox />
-      </template>
-
-      <template #col-2>
-        <PollBox />
-      </template>
-    </TwoColumnGrid>
+        <template #col-2>
+          <PollBox />
+        </template>
+      </TwoColumnGrid>
+    </section>
 
     <CaruselSlider :slides="items" />
-
+    <section id="before_image">
     <BeforeAfterImg
       mainHeading=""
       subHeading="Charmerende lejligheder i de gamle rødstensbygninger"
@@ -114,6 +121,7 @@ const items = ref([
       :beforeImage="beforeImage2"
       :afterImage="afterImage2"
     />
+  </section>
   </main>
 </template>
 

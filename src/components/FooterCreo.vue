@@ -4,27 +4,26 @@
   <div class="footer_wrapper">
     <div class="grid">
       <p class="text">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the.
+        Boulevarden bringer samfundet sammen og styrker tilliden gennem samarbejde.
       </p>
       <div class="list">
         <ul>
-          <h3 class="h3_poppins">Navigation</h3>
+          <h3 class="h3_poppins">Forside</h3>
           <div class="body_poppins">
-            <a href=""><li>Navigation</li></a>
-            <a href=""><li>Navigation</li></a>
-            <a href=""><li>Navigation</li></a>
-            <a href=""><li>Navigation</li></a>
+            <a href="#introduction_video"><li>Introduktion video</li></a>
+            <a href="#about_project"><li>Om os</li></a>
+            <a href="#interview_video"><li>Se hvad andre tænker</li></a>
+            <a href="#poll_text"><li>Giv os din mening</li></a>
+            <a href="#before_image"><li>Før og efter billeder</li></a>
           </div>
         </ul>
 
         <ul>
-          <h3 class="h3_poppins">Andet Info</h3>
+          <h3 class="h3_poppins">Om Creo</h3>
           <div class="body_poppins">
-            <a href=""><li>Andet info</li></a>
-            <a href=""><li>Andet info</li></a>
-            <a href=""><li>Andet info</li></a>
-            <a href=""><li>Andet info</li></a>
+            <a href="aboutview.vue.html#who_we"><li>Hvem er vi</li></a>
+            <a href="#why_do"><li>Hvorfor vil vi det her</li></a>
+            <a href="#we_are"><li>Profiler fra Creo</li></a>
           </div>
         </ul>
       </div>
@@ -92,10 +91,11 @@ a:hover img {
 .text {
   grid-area: text;
   color: #606c38;
-  font-size: 45px;
+  font-size: 55px;
 
   @media screen and (max-width: 900px) {
     margin-bottom: 70px;
+    font-size: 30px;
   }
 }
 
