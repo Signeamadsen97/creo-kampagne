@@ -1,13 +1,26 @@
 <script setup></script>
 
 <template>
-  <h1 class="h2_poppins">Vi tror på</h1>
   <div class="brand_wrapper">
+    <h1 class="h1_poppins">Vi går op i</h1>
     <div class="grid">
-      <img src="./icon/icon1.svg" alt="" />
-      <img src="./icon/icon2.svg" alt="" />
-      <img src="./icon/icon3.svg" alt="" />
-      <img src="./icon/icon4.svg" alt="" />
+      <div class="icon1">
+        <img src="./icon/icon1.svg" alt="" />
+        <h2 class="h2_poppins">Fedt nok</h2>
+      </div>
+      <div class="icon2">
+        <img src="./icon/icon2.svg" alt="" />
+        <h2 class="h2_poppins">Fedt nok</h2>
+      </div>
+      <div class="icon3">
+        <img src="./icon/icon3.svg" alt="" />
+        <h2 class="h2_poppins">Fedt nok</h2>
+      </div>
+
+      <div class="icon4">
+        <img src="./icon/icon4.svg" alt="" />
+        <h2 class="h2_poppins">Fedt nok</h2>
+      </div>
     </div>
   </div>
 </template>
@@ -17,19 +30,30 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
+  @media screen and (max-width: 730px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-.grid img {
-  width: 100%;
+.h1_poppins {
+  text-align: center;
+  font-size: 45px;
+  color: black;
 }
 
 .h2_poppins {
-  margin-left: 65px;
+  display: grid;
+  text-align: center;
+  color: black;
+  font-weight: 400;
 }
-
+.grid img {
+  width: 100%;
+}
 .brand_wrapper {
   padding: var(--wrapper-padding);
-  background: linear-gradient(270deg, #D4D4AA, #FEFAE0, #616D38);
+  background: linear-gradient(270deg, #d4d4aa, #fefae0, #616d38);
   background-size: 600% 600%;
   animation: gradientAnimation 10s ease infinite;
 }
