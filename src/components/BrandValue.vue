@@ -4,10 +4,10 @@
   <h1 class="h2_poppins">Vi tror på</h1>
   <div class="brand_wrapper">
     <div class="grid">
-      <img src="./icon/" alt="" />
-      <img src="https://fakeimg.pl/251x181" alt="" />
-      <img src="https://fakeimg.pl/251x181" alt="" />
-      <img src="https://fakeimg.pl/251x181" alt="" />
+      <img src="./icon/icon1.svg" alt="" />
+      <img src="./icon/icon2.svg" alt="" />
+      <img src="./icon/icon3.svg" alt="" />
+      <img src="./icon/icon4.svg" alt="" />
     </div>
   </div>
 </template>
