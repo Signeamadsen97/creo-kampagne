@@ -39,6 +39,15 @@ const props = defineProps({
     default: false,
   },
 });
+
+// Metoder til håndtering af klik-begivenheder
+const handleLikeClick = () => {
+  alert("Du har trykket på Like knappen!");
+};
+
+const handleDislikeClick = () => {
+  alert("Du har trykket på Dislike knappen!");
+};
 </script>
 
 <template>
