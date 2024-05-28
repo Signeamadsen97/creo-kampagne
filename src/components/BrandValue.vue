@@ -30,6 +30,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
+
   @media screen and (max-width: 730px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -48,9 +49,11 @@
   color: black;
   font-weight: 400;
 }
+
 .grid img {
   width: 100%;
 }
+
 .brand_wrapper {
   padding: var(--wrapper-padding);
   background: linear-gradient(270deg, #d4d4aa, #fefae0, #616d38);
@@ -70,5 +73,4 @@
   100% {
     background-position: 0% 50%;
   }
-}
-</style>
+}</style>
