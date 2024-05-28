@@ -6,6 +6,7 @@ import TextMedia from "@/components/TextMedia.vue";
 
 import kristinaImage from "@/components/icon/kristina.png";
 import simonImage from "@/components/icon/simon.png";
+import overblikImage from "@/components/icon/overblik.jpg"
 
 const profiles = [
   {
@@ -34,7 +35,7 @@ const profiles = [
     </section>
     <TextMedia :about-us="true" :vertical="true"
       grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
-      grid-image-src="https://fakeimg.pl/696x496" />
+      :grid-image-src="overblikImage" />
     <section id="why_do">
       <TextImageBackground />
     </section>

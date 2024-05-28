@@ -6,7 +6,7 @@
       <img src="../icon/Logo.png" alt="" />
     </div>
 
-    <h3 class="intro_text body_poppins">
+    <h3 class="intro_text h2_poppins">
       Vi vil skabe arkitektur, de næste generationer ønsker at bevare.
     </h3>
   </div>
@@ -25,6 +25,5 @@
   padding-top: 80px;
   padding-left: 100px;
   font-size: 40px;
-  font-weight: 100;
 }
 </style>
