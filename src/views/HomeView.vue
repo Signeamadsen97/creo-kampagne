@@ -16,6 +16,9 @@ import beforeImage2 from "@/components/icon/before2.jpg";
 import afterImage2 from "@/components/icon/after2.jpg";
 import karreImage from "@/components/icon/karre.jpg"
 import boligblokImage from "@/components/icon/boligblok.jpg"
+import boligIkon from '@/components/icon/bolig-ikon.png';
+import groentIkon from "@/components/icon/groent-ikon.png"
+import genanvendelseIkon from "@/components/icon/genanvendelse-ikon.png"
 
 import { ref, onMounted } from "vue";
 import TwoColumnGrid from "@/components/TwoColumnGrid.vue";
@@ -41,7 +44,7 @@ const items = ref([
     text1: `Der er i alt`,
     text2: `som har stemt det samme som dig`,
     image: {
-      src: "https://fakeimg.pl/467x549",
+      src: boligIkon,
       alt: "Billede 1",
     },
     votes: 0,
@@ -51,7 +54,7 @@ const items = ref([
     text2: `som har stemt det samme som dig`,
     votes: 0,
     image: {
-      src: "https://fakeimg.pl/467x549",
+      src: groentIkon,
       alt: "Billede 1",
     },
   },
@@ -60,7 +63,7 @@ const items = ref([
     text2: `som har stemt det samme som dig`,
     votes: 0,
     image: {
-      src: "https://fakeimg.pl/467x549",
+      src: genanvendelseIkon,
       alt: "Billede 1",
     },
   },
