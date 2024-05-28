@@ -66,10 +66,10 @@ const handleDislikeClick = () => {
       <h3 class="bigtext h1_poppins">{{ bigText }}</h3>
       <div class="feedback-section">
         <button class="feedback-button like-button">
-          <img src="./icon/like.png" alt="Like" class="feedback-image">
+          <img src="./icon/like.png" alt="Like" class="feedback-image" @click="handleLikeClick">
         </button>
         <button class="feedback-button dislike-button">
-          <img src="./icon/dislike.png" alt="Dislike" class="feedback-image">
+          <img src="./icon/dislike.png" alt="Dislike" class="feedback-image" @click="handleDislikeClick">
         </button>
       </div>
     </div>
@@ -139,6 +139,11 @@ const handleDislikeClick = () => {
   padding: 10px 20px;
   cursor: pointer;
   background: none;
+
+  &:hover {
+    filter: brightness(2.2);
+    /* Lysere knap ved hover */
+  }
 }
 
 .feedback-image {
@@ -146,9 +151,6 @@ const handleDislikeClick = () => {
   /* Juster størrelsen efter behov */
   height: auto;
 }
-
-
-.feedback-button:hover {}
 
 .before_img {
   width: 100%;
