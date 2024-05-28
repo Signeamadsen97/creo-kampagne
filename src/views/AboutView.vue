@@ -7,15 +7,15 @@ import TextMedia from "@/components/TextMedia.vue";
 const profiles = [
   {
     img: "https://fakeimg.pl/467x549",
-    text: "Jeg er vild med at lege med bygninger?",
+    text: "Området har potentiale til fanstiske grønne områder",
   },
   {
     img: "https://fakeimg.pl/467x549",
-    text: "Jeg er vild med at lege med bygninger?",
+    text: "Man kan virkelig slippe drømmene løs og tænke stort",
   },
   {
     img: "https://fakeimg.pl/467x549",
-    text: "Jeg er vild med at lege med bygninger?",
+    text: "Creo har historisk tilknytning til området, vi vil gerne være med i dens fremtid",
   },
   {
     img: "https://fakeimg.pl/467x549",
@@ -29,12 +29,9 @@ const profiles = [
     <section id="who_we">
       <CreoIntro />
     </section>
-    <TextMedia
-      :about-us="true"
-      :vertical="true"
+    <TextMedia :about-us="true" :vertical="true"
       grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
-      grid-image-src="https://fakeimg.pl/696x496"
-    />
+      grid-image-src="https://fakeimg.pl/696x496" />
     <section id="why_do">
       <TextImageBackground />
     </section>

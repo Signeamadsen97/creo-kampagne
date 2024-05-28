@@ -7,8 +7,7 @@
     </div>
 
     <h3 class="intro_text body_poppins">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the.
+      Vi vil skabe arkitektur, de næste generationer ønsker at bevare.
     </h3>
   </div>
 </template>
@@ -17,9 +16,11 @@
 .creo_wrapper {
   padding: 50px var(--wrapper-padding-x);
 }
+
 .logo {
   padding-top: 105px;
 }
+
 .intro_text {
   padding-top: 80px;
   padding-left: 100px;
