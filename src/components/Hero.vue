@@ -4,9 +4,8 @@
   <div class="grid">
     <div>
       <p class="body_poppins">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s,
+        Området ved “det gamle OUH”, som I kender det nu, vil skulle ombygges.
+        Det bliver en helt ny bydel i Odense. Det er din by og derfor er det vigtigt, at høre din mening.
       </p>
     </div>
 
@@ -60,6 +59,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+
   @media screen and (max-width: 1200px) {
     display: grid;
     transform: none;
@@ -84,6 +84,4 @@
     margin-top: -39px;
   }
 }
-
-
 </style>

@@ -130,34 +130,23 @@ onMounted(async () => {
     <section id="about_project">
       <TwoColumnGrid>
         <template #col-1>
-          <TextMedia
-            heading="Om os"
-            grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
+          <TextMedia heading="Om os" grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
             grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
-            grid-image-src="https://fakeimg.pl/467x549"
-          />
+            grid-image-src="https://fakeimg.pl/467x549" />
         </template>
         <template #col-2>
-          <TextMedia
-            heading=""
-            grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
+          <TextMedia heading="" grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
             grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
-            grid-image-src="https://fakeimg.pl/467x549"
-            :reverse="true"
-          />
+            grid-image-src="https://fakeimg.pl/467x549" :reverse="true" />
         </template>
       </TwoColumnGrid>
     </section>
     <PageBreaker />
     <section id="interview_video">
-      <TextMedia
-        heading=""
-        grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
+      <TextMedia heading="" grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
         grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
         grid-text-bottom="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
-        grid-image-src="https://fakeimg.pl/774x516"
-        :vertical="true"
-      />
+        grid-image-src="https://fakeimg.pl/774x516" :vertical="true" />
     </section>
     <section id="poll_text">
       <TwoColumnGrid second-column-width="1.5fr">
@@ -173,24 +162,16 @@ onMounted(async () => {
 
     <CaruselSlider :slides="items" />
     <section id="before_image">
-      <BeforeAfterImg
-        mainHeading=""
-        subHeading="Charmerende lejligheder i de gamle rødstensbygninger"
+      <BeforeAfterImg mainHeading=""
+        subHeading="Rødstensbygninger fra da OUH først blev bygget i 1912 kan blive til boliger."
         bodyText="Kunne du forestille dig at bo i en af de tidligste hospitalsbygninger. De gamle smukke rødstenbygninger har potentiale til at forme rammerne for at fantastisk hjem, midt i byen nær mange grønne områder,"
-        bigText="Kunne du forestille dig at bo her?"
-        :beforeImage="beforeImage1"
-        :afterImage="afterImage1"
-      />
+        bigText="Kunne du forestille dig at bo her?" :beforeImage="beforeImage1" :afterImage="afterImage1" />
 
-      <BeforeAfterImg
-        :reverse="true"
-        mainHeading=""
-        subHeading="Nyd din kaffe under blåregnen"
+      <BeforeAfterImg :reverse="true" mainHeading=""
+        subHeading="Et vidensområde for lægestuderende bliver nu til et udendørs samlingspunkt omringet af grønt."
         bodyText="Områderne omkring det gamle hospital byder på mange muligheder. blandt andet denne smukke plads, som med fordel kunne blive en cafe eler et samlingsområde. Her kunne man nyde sin, frkost, kaffe eller andet, under den smukke blåregn"
-        bigText="Kunne du forestille dig at drikke din kaffe her?"
-        :beforeImage="beforeImage2"
-        :afterImage="afterImage2"
-      />
+        bigText="Kunne du forestille dig at drikke din kaffe her?" :beforeImage="beforeImage2"
+        :afterImage="afterImage2" />
     </section>
   </main>
 </template>
