@@ -19,7 +19,7 @@ const profiles = [
   },
   {
     img: simonImage,
-    text: "Creo har historisk tilknytning til området, vi vil gerne være med i dens fremtid",
+    text: "Creo har historisk tilknytning til området, vi vil gerne være en del af dens fremtid",
   },
   {
     img: "https://fakeimg.pl/467x549",

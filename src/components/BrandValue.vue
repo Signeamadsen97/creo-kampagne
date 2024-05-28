@@ -62,9 +62,9 @@
 .brand_wrapper {
   padding: var(--wrapper-padding);
   margin-bottom: 5%;
-  background: linear-gradient(270deg, #d4d4aa, #fefae0, #616d38);
+  background: linear-gradient(270deg, #616d38, #d4d4aa, #fefae0);
   background-size: 600% 600%;
-  animation: gradientAnimation 10s ease infinite;
+  animation: gradientAnimation 8s ease infinite;
 }
 
 @keyframes gradientAnimation {
