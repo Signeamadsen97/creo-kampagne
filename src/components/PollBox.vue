@@ -37,16 +37,14 @@ async function submit() {
       Hvad drømmer du om?
     </h1>
     <form @submit.prevent="submit">
-      <InputField
-        label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
-        name="vote" value="option 1" @changed="handleChange" />
+      <InputField label="Drømmer du om lækre boliger, hvor hverdagen kan udfolde sig midt i byen?" name="vote"
+        value="option 1" @changed="handleChange" />
+
+      <InputField label="Drømmer du om grønne områder tæt ved din hverdag, til glæde for byen?" name="vote"
+        value="option 2" @changed="handleChange" />
 
       <InputField
-        label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
-        name="vote" value="option 2" @changed="handleChange" />
-
-      <InputField
-        label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
+        label="Drømmer du om bæredygtighed og genandenvdelse, af nogle af de smukke facilitter som allerede eksistere?"
         name="vote" value="option 3" @changed="handleChange" />
 
       <InputField
