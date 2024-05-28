@@ -14,6 +14,8 @@ import beforeImage1 from "@/components/icon/before1.jpg";
 import afterImage1 from "@/components/icon/after1.jpg";
 import beforeImage2 from "@/components/icon/before2.jpg";
 import afterImage2 from "@/components/icon/after2.jpg";
+import karreImage from "@/components/icon/karre.jpg"
+import boligblokImage from "@/components/icon/boligblok.jpg"
 
 import { ref, onMounted } from "vue";
 import TwoColumnGrid from "@/components/TwoColumnGrid.vue";
@@ -132,12 +134,12 @@ onMounted(async () => {
         <template #col-1>
           <TextMedia heading="Om os" grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
             grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
-            grid-image-src="https://fakeimg.pl/467x549" />
+            :grid-image-src="boligblokImage" />
         </template>
         <template #col-2>
           <TextMedia heading="" grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
             grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
-            grid-image-src="https://fakeimg.pl/467x549" :reverse="true" />
+            :grid-image-src="karreImage" :reverse="true" />
         </template>
       </TwoColumnGrid>
     </section>
@@ -162,14 +164,12 @@ onMounted(async () => {
     <CaruselSlider :slides="items" />
     <section id="before_image">
       <BeforeAfterImg mainHeading=""
-        subHeading="Rødstensbygninger fra da OUH først blev bygget i 1912 kan blive til boliger."
-        bodyText="De gamle smukke rødstenbygninger har potentiale til at forme rammerne for at fantastisk hjem, midt i byen nær mange grønne områder."
-        bigText="Kunne du forestille dig at bo her?" :beforeImage="beforeImage1" :afterImage="afterImage1" />
+        subHeading="Rødstensbygninger fra da OUH først blev bygget i 1912, har potentiale til at forme rammerne for fantastiske hjem."
+        bodyText="" bigText="Kunne du forestille dig at bo her?" :beforeImage="beforeImage1" :afterImage="afterImage1" />
 
       <BeforeAfterImg :reverse="true" mainHeading=""
-        subHeading="Et vidensområde for lægestuderende bliver nu til et udendørs samlingspunkt omringet af grønt."
-        bodyText="Blandt andet denne smukke plads, som med fordel kunne blive et samlingsområde, under den smukke blåregn"
-        bigText="Hvad synes du?" :beforeImage="beforeImage2" :afterImage="afterImage2" />
+        subHeading="Et vidensområde for medicinstuderende bliver nu til et udendørs samlingspunkt omringet af grønt."
+        bodyText="" bigText="Hvad synes du?" :beforeImage="beforeImage2" :afterImage="afterImage2" />
     </section>
   </main>
 </template>
