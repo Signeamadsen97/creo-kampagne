@@ -11,19 +11,21 @@
       </div>
       <div class="icon2">
         <img src="./icon/icon2.svg" alt="" />
-        <h2 class="h2_poppins">Fedt nok</h2>
-        <p class="body_poppins">Byens borgere skal have mulighed for at inkludere og engagere sig i byens udvikling</p>
+        <h2 class="h2_poppins">Professionel tillid</h2>
+        <p class="body_poppins">Vi leverer professionelle løsninger, basert på jeres ønsker, i samarbejde med eksperter og
+          fagfolk.</p>
       </div>
       <div class="icon3">
         <img src="./icon/icon3.svg" alt="" />
-        <h2 class="h2_poppins">Fedt nok</h2>
+        <h2 class="h2_poppins">Mennesket i fokus</h2>
         <p class="body_poppins">Byens borgere skal have mulighed for at inkludere og engagere sig i byens udvikling</p>
       </div>
 
       <div class="icon4">
         <img src="./icon/icon4.svg" alt="" />
-        <h2 class="h2_poppins">Fedt nok</h2>
-        <p class="body_poppins">Byens borgere skal have mulighed for at inkludere og engagere sig i byens udvikling</p>
+        <h2 class="h2_poppins">Historisk ansvar</h2>
+        <p class="body_poppins">Vi bygger på arven fra tidligere bygningsprojekter og fortsætter med at skabe høj kvalitet
+          og værdi</p>
       </div>
     </div>
   </div>
@@ -33,7 +35,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
+  gap: 70px;
 
   @media screen and (max-width: 730px) {
     display: grid;
