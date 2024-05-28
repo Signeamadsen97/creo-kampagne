@@ -4,17 +4,20 @@ import HvemErVi from "@/components/omcreo/HvemErVi.vue";
 import TextImageBackground from "@/components/omcreo/TextImageBackground.vue";
 import TextMedia from "@/components/TextMedia.vue";
 
+import kristinaImage from "@/components/icon/kristina.png";
+import simonImage from "@/components/icon/simon.png";
+
 const profiles = [
   {
     img: "https://fakeimg.pl/467x549",
     text: "Området har potentiale til fanstiske grønne områder",
   },
   {
-    img: "https://fakeimg.pl/467x549",
+    img: kristinaImage,
     text: "Man kan virkelig slippe drømmene løs og tænke stort",
   },
   {
-    img: "https://fakeimg.pl/467x549",
+    img: simonImage,
     text: "Creo har historisk tilknytning til området, vi vil gerne være med i dens fremtid",
   },
   {
