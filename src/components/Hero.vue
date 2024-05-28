@@ -11,7 +11,7 @@
 
     <div>
       <h1 class="hero_1 h1_poppins">Boulevarden Odense</h1>
-      <img class="heromedia" src="https://fakeimg.pl/982x589" alt="" />
+      <video src="./icon/"></video>
       <h1 class="hero_2 h1_poppins ">Dit nye område midt i byen</h1>
     </div>
   </div>
