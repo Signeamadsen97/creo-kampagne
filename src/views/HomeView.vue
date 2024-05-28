@@ -132,13 +132,14 @@ onMounted(async () => {
     <section id="about_project">
       <TwoColumnGrid>
         <template #col-1>
-          <TextMedia heading="Om os" grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
-            grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
+          <TextMedia heading="OUH i dag og for fremtiden" grid-heading="Byområdet midt i Odense skal have nyt liv"
+            grid-text-top="i dag er OUH fyns største arbejdsplads, men om nogen år når  hospitalet flytter adresse, bliver mulighederne er mange. Området skal genanvendes og blive til noget nyt. <br/>
+            Der er på området blevet bygget over mnge år, i byggestilen so har passet til tiden. Derfor står der mange forskellige bygningskroppe på området, som hver har forskellige potentialer for genanvendelse efter hospitalets udrykning"
             :grid-image-src="boligblokImage" />
         </template>
         <template #col-2>
-          <TextMedia heading="" grid-heading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, minus."
-            grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
+          <TextMedia heading="" grid-heading="Hvilke drømme har fremtiden naboer og beboere for området?"
+            grid-text-top="Vi tror på at byens borgere skal have mulighed for at give deres holdninger til havd der skal ske "
             :grid-image-src="karreImage" :reverse="true" />
         </template>
       </TwoColumnGrid>

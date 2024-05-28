@@ -58,7 +58,7 @@ const props = defineProps({
     <div class="grid">
       <div class="media_text">
         <h2 v-if="gridHeading.length" class="h3_poppins">{{ gridHeading }}</h2>
-        <p v-if="gridTextTop.length" class="body_poppins">{{ gridTextTop }}</p>
+        <p v-if="gridTextTop.length" class="body_poppins" v-html="gridTextTop"></p>
         <p v-if="gridTextBottom.length" class="body_poppins">
           {{ gridTextBottom }}
         </p>
