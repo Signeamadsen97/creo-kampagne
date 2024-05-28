@@ -34,7 +34,8 @@ const profiles = [
       <CreoIntro />
     </section>
     <TextMedia :about-us="true" :vertical="true"
-      grid-text-top="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel eius aperiam dicta, consequatur debitis accusantium, eaque voluptates ullam facilis reiciendis commodi ducimus dolorum! Asperiores quasi quas ipsum, repellat ut, nostrum, reiciendis minima id consectetur vel saepe nemo odio est. Aliquam dolore consequuntur consequatur, natus in perspiciatis magnam expedita atque?"
+      grid-text-top="Som arkitekter er vores største opgave at skabe rammerne, som vores liv og drømme udfolder sig i. <br/> <br/>
+      Vores fokus er på bæredygtighed og genavendelse hvor det er muligt. Vores bygninger skal fremme livet, derfor lytter vi og er nysgerrige"
       :grid-image-src="overblikImage" />
     <section id="why_do">
       <TextImageBackground />

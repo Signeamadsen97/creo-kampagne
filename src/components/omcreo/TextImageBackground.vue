@@ -12,8 +12,7 @@
           Creo har en helt særlig relation til Odense Universitetshospital. <br> <br>
           Den 13 etagers sengebygning, er nemlig opført i samarbejde med Jørgen Stærmose. <br> <br>
           Han er også manden bag Creo Arkitekter, da han i sin tid grundlagde tegnestuen. <br> <br>
-          Creo Arkitekters relation til OUH og erfaring indenfor sundhedssektoren gør dem perfekte til dette projekt, med
-          deres tidligere erfaring.
+          Creo Arkitekters relation til OUH og erfaring indenfor sundhedssektoren gør dem perfekte til dette projekt.
         </p>
       </div>
       <div class="img">

@@ -134,11 +134,12 @@ onMounted(async () => {
         <template #col-1>
           <TextMedia heading="OUH i dag og for fremtiden" grid-heading="Byområdet midt i Odense skal have nyt liv"
             grid-text-top="i dag er OUH fyns største arbejdsplads, men om nogen år når  hospitalet flytter adresse, bliver mulighederne er mange. Området skal genanvendes og blive til noget nyt. <br/>
-            Der er på området blevet bygget over mnge år, i byggestilen so har passet til tiden. Derfor står der mange forskellige bygningskroppe på området, som hver har forskellige potentialer for genanvendelse efter hospitalets udrykning. "
+            Der er på området blevet bygget over mange år, i den byggestilen so har passet til tiden. Derfor står der mange forskellige bygningskroppe på området, fra forskellige tider og stilarter. Alle bygningerne har forskellige potentialer for genanvendelse efter hospitalets udrykning. "
             :grid-image-src="boligblokImage" />
         </template>
         <template #col-2>
-          <TextMedia heading="" grid-heading="Hvilke drømme har fremtiden naboer og beboere for området?" grid-text-top="Vi tror på at byens borgere skal have mulighed for at give deres holdninger til hvad der skal ske på det nye byområde, som om nogen år skla udvikles i Odense. <br/>
+          <TextMedia heading="" grid-heading="Drømme for fremtiden" grid-text-top="
+            Vi har mange ideer og drømme for området, både nye ideer og ideer som bevare nogen af området skjulte skatte og de smukke originale bygningsværker. Samtidig mender vi tror på at byens borgere skal have mulighed for at give deres ideer til hvad der skal ske på det nye byområde, som om nogen år skal udvikles i Odense. <br/>
             Derfor vil vi give muligheden for allerede nu at i kan komme med jeres ideer og drømme. <br/> 
             Drømmer du om skønne boliger, Grønne områder, sociale samlings steder eller noget helt andet, i dit nærområde? <br/>
             Så er det nu og her du kan få muligheden for at netop dine drømme bliver inkluderet i udviklingen."
