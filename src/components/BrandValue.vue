@@ -6,20 +6,24 @@
     <div class="grid">
       <div class="icon1">
         <img src="./icon/icon1.svg" alt="" />
-        <h2 class="h2_poppins">Fedt nok</h2>
+        <h2 class="h2_poppins">Inklusion</h2>
+        <p class="body_poppins">Byens borgere skal have mulighed for at inkludere og engagere sig i byens udvikling</p>
       </div>
       <div class="icon2">
         <img src="./icon/icon2.svg" alt="" />
         <h2 class="h2_poppins">Fedt nok</h2>
+        <p class="body_poppins">Byens borgere skal have mulighed for at inkludere og engagere sig i byens udvikling</p>
       </div>
       <div class="icon3">
         <img src="./icon/icon3.svg" alt="" />
         <h2 class="h2_poppins">Fedt nok</h2>
+        <p class="body_poppins">Byens borgere skal have mulighed for at inkludere og engagere sig i byens udvikling</p>
       </div>
 
       <div class="icon4">
         <img src="./icon/icon4.svg" alt="" />
         <h2 class="h2_poppins">Fedt nok</h2>
+        <p class="body_poppins">Byens borgere skal have mulighed for at inkludere og engagere sig i byens udvikling</p>
       </div>
     </div>
   </div>
@@ -45,13 +49,12 @@
 
 .h2_poppins {
   display: grid;
-  text-align: center;
   color: black;
   font-weight: 400;
 }
 
 .grid img {
-  width: 100%;
+  width: 70%;
 }
 
 .brand_wrapper {
@@ -73,4 +76,5 @@
   100% {
     background-position: 0% 50%;
   }
-}</style>
+}
+</style>

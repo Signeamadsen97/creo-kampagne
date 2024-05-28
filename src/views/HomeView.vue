@@ -164,14 +164,13 @@ onMounted(async () => {
     <section id="before_image">
       <BeforeAfterImg mainHeading=""
         subHeading="Rødstensbygninger fra da OUH først blev bygget i 1912 kan blive til boliger."
-        bodyText="Kunne du forestille dig at bo i en af de tidligste hospitalsbygninger. De gamle smukke rødstenbygninger har potentiale til at forme rammerne for at fantastisk hjem, midt i byen nær mange grønne områder,"
+        bodyText="De gamle smukke rødstenbygninger har potentiale til at forme rammerne for at fantastisk hjem, midt i byen nær mange grønne områder."
         bigText="Kunne du forestille dig at bo her?" :beforeImage="beforeImage1" :afterImage="afterImage1" />
 
       <BeforeAfterImg :reverse="true" mainHeading=""
         subHeading="Et vidensområde for lægestuderende bliver nu til et udendørs samlingspunkt omringet af grønt."
-        bodyText="Områderne omkring det gamle hospital byder på mange muligheder. blandt andet denne smukke plads, som med fordel kunne blive en cafe eler et samlingsområde. Her kunne man nyde sin, frkost, kaffe eller andet, under den smukke blåregn"
-        bigText="Kunne du forestille dig at drikke din kaffe her?" :beforeImage="beforeImage2"
-        :afterImage="afterImage2" />
+        bodyText="Blandt andet denne smukke plads, som med fordel kunne blive et samlingsområde, under den smukke blåregn"
+        bigText="Hvad synes du?" :beforeImage="beforeImage2" :afterImage="afterImage2" />
     </section>
   </main>
 </template>
