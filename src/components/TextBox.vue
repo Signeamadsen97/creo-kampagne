@@ -6,7 +6,7 @@
     </div>
 
     <div class="textbox">
-      <h2 class="h2_poppins">Odenses nye byområde <br> <br> - Boulevardens bliver bygget til dig.</h2>
+      <h2 class="h2_poppins">Odenses nye byområde - Boulevardens bliver bygget til dig.</h2>
     </div>
   </div>
 </template>
@@ -20,12 +20,10 @@
 
 .textbox {
   background-color: #D4D4AA;
+  padding: 50px var(--wrapper-padding-x);
 }
 
 .h2_poppins {
   width: 500px;
-  font-size: 2.5rem;
-  margin-top: 40%;
-  margin-left: 10%;
 }
 </style>
