@@ -72,6 +72,14 @@ const props = defineProps({
 .media_wrapper {
   padding: 30px var(--wrapper-padding-x);
 
+  .h3_poppins {
+    line-height: 3rem;
+  }
+
+  .body_poppins {
+    line-height: 2.2rem;
+  }
+
   &.reverse {
     .media_text {
       order: 2;
