@@ -16,7 +16,7 @@
         </p>
       </div>
       <div class="img">
-        <img class="img_tib" src="https://fakeimg.pl/467x549" alt="" />
+        <img class="img_tib" src="../icon/skyrise.jpg" alt="" />
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
 }
 
 .img_tib {
-  width: 100%;
+  width: 90%;
 }
 
 .wrapper {
