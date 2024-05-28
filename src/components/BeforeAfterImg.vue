@@ -55,7 +55,6 @@ const props = defineProps({
         <button class="feedback-button like-button">
           <img src="./icon/like.png" alt="Like" class="feedback-image">
         </button>
-        <span class="feedback-text h3_poppins">Hvad synes du</span>
         <button class="feedback-button dislike-button">
           <img src="./icon/dislike.png" alt="Dislike" class="feedback-image">
         </button>

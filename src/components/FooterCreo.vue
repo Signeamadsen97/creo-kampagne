@@ -9,51 +9,38 @@
       </p>
       <div class="list">
         <ul>
-          <RouterLink to="/"><h3 class="h3_poppins">Forside</h3></RouterLink>
+          <RouterLink to="/">
+            <h3 class="h3_poppins">Forside</h3>
+          </RouterLink>
           <div class="body_poppins">
             <li>
-              <RouterLink
-                class="footer-link"
-                :to="{
-                  path: '/',
-                  query: { scrollTo: 'introduction_video' },
-                }"
-              >
-                Om os
+              <RouterLink class="footer-link" :to="{
+                path: '/',
+                query: { scrollTo: 'introduction_video' },
+              }">
+                Værdier
               </RouterLink>
             </li>
 
             <li>
-              <RouterLink
-                class="footer-link"
-                :to="{ path: '/', query: { scrollTo: 'about_project' } }"
-              >
+              <RouterLink class="footer-link" :to="{ path: '/', query: { scrollTo: 'about_project' } }">
                 Om projektet
               </RouterLink>
             </li>
 
             <li>
-              <RouterLink
-                class="footer-link"
-                :to="{ path: '/', query: { scrollTo: 'interview_video' } }"
-              >
+              <RouterLink class="footer-link" :to="{ path: '/', query: { scrollTo: 'interview_video' } }">
                 Hør hvad andre tænker
               </RouterLink>
             </li>
 
             <li>
-              <RouterLink
-                class="footer-link"
-                :to="{ path: '/', query: { scrollTo: 'poll_text' } }"
-              >
+              <RouterLink class="footer-link" :to="{ path: '/', query: { scrollTo: 'poll_text' } }">
                 Giv os din mening
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                class="footer-link"
-                :to="{ path: '/', query: { scrollTo: 'before_image' } }"
-              >
+              <RouterLink class="footer-link" :to="{ path: '/', query: { scrollTo: 'before_image' } }">
                 Før og efter billeder
               </RouterLink>
             </li>
@@ -61,31 +48,24 @@
         </ul>
 
         <ul>
-          <RouterLink to="/about"><h3 class="h3_poppins">Om Creo</h3></RouterLink>
+          <RouterLink to="/about">
+            <h3 class="h3_poppins">Om Creo</h3>
+          </RouterLink>
           <div class="body_poppins">
             <li>
-              <RouterLink
-                class="footer-link"
-                :to="{ path: 'about', query: { scrollTo: 'who_we' } }"
-              >
+              <RouterLink class="footer-link" :to="{ path: 'about', query: { scrollTo: 'who_we' } }">
                 Om os
               </RouterLink>
             </li>
 
             <li>
-              <RouterLink
-                class="footer-link"
-                :to="{ path: 'about', query: { scrollTo: 'why_do' } }"
-              >
+              <RouterLink class="footer-link" :to="{ path: 'about', query: { scrollTo: 'why_do' } }">
                 Hvorfor vil vi det gerne
               </RouterLink>
             </li>
 
             <li>
-              <RouterLink
-                class="footer-link"
-                :to="{ path: 'about', query: { scrollTo: 'we_are' } }"
-              >
+              <RouterLink class="footer-link" :to="{ path: 'about', query: { scrollTo: 'we_are' } }">
                 Mere om os
               </RouterLink>
             </li>

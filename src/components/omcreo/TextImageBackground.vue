@@ -47,12 +47,12 @@
   line-height: 3rem;
 }
 
-.wrapper {
-  background-color: #FEFAE0;
-  display: grid;
-}
-
 .img_tib {
   width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  background: linear-gradient(270deg, #d4d4aa, #fefae0);
 }
 </style>

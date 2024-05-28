@@ -34,36 +34,24 @@ async function submit() {
 <template>
   <div class="box_container">
     <h1 class="h2_poppins">
-      Giv os din mening så vi kan være ligeglade med hvad du tænker!
+      Hvad drømmer du om?
     </h1>
     <form @submit.prevent="submit">
       <InputField
         label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
-        name="vote"
-        value="option 1"
-        @changed="handleChange"
-      />
+        name="vote" value="option 1" @changed="handleChange" />
 
       <InputField
         label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
-        name="vote"
-        value="option 2"
-        @changed="handleChange"
-      />
+        name="vote" value="option 2" @changed="handleChange" />
 
       <InputField
         label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
-        name="vote"
-        value="option 3"
-        @changed="handleChange"
-      />
+        name="vote" value="option 3" @changed="handleChange" />
 
       <InputField
         label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
-        name="vote"
-        value="option 4"
-        @changed="handleChange"
-      />
+        name="vote" value="option 4" @changed="handleChange" />
       <div class="buttonwrapper">
         <button type="submit">Giv os din mening her!</button>
       </div>
@@ -85,6 +73,7 @@ form {
   gap: 36px;
   width: 100%;
 }
+
 .buttonwrapper {
   width: 100%;
   display: flex;
