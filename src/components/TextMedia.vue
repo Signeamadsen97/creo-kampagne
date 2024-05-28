@@ -95,8 +95,25 @@ const props = defineProps({
     padding-top: 120px;
 
     .grid {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.3fr 1fr;
       gap: 104px;
+
+      .media_text {
+        width: 70%;
+        padding-bottom: 20%;
+      }
+
+      .h3_poppins {
+        padding-bottom: 10%;
+        line-height: 3rem;
+        font-weight: 600;
+        font-size: 2rem;
+      }
+
+      .body_poppins {
+        line-height: 2rem;
+        font-size: 1.5rem;
+      }
 
       @media screen and (max-width: 900px) {
         grid-template-columns: 1fr;
