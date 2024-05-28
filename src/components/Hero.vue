@@ -11,7 +11,7 @@
 
     <div>
       <h1 class="hero_1 h1_poppins">Boulevarden Odense</h1>
-      <video src="./icon/"></video>
+      <video class="banner-video" src="./icon/Banner_video.mp4"></video>
       <h1 class="hero_2 h1_poppins ">Dit nye område midt i byen</h1>
     </div>
   </div>
@@ -83,5 +83,9 @@
     font-size: 25px;
     margin-top: -39px;
   }
+}
+
+.banner-video {
+  width: 100%;
 }
 </style>
