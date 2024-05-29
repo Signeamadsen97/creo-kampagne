@@ -130,6 +130,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
   font-size: 25px;
   color: black;
 
+  @media screen and (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 70px;
+    order: 2;
+  }
+
   @media screen and (max-width: 850px) {
     display: grid;
     grid-template-columns: 1fr;
@@ -207,6 +214,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;  
+
+  @media screen and (max-width: 850px) {
+    
+  }
   .triangle {
     -webkit-transition: all 0.7s ease-in-out;
     stroke-dasharray: 240;
