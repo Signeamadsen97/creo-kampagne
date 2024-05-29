@@ -7,7 +7,6 @@ import PageBreaker from "@/components/PageBreaker.vue";
 import TextBox from "@/components/TextBox.vue";
 import PollBox from "@/components/PollBox.vue";
 import CaruselSlider from "@/components/CaruselSlider.vue";
-
 import BeforeAfterImg from "@/components/BeforeAfterImg.vue";
 
 import beforeImage1 from "@/components/icon/before1.jpg";
@@ -165,7 +164,7 @@ onMounted(async () => {
         grid-heading="Simon fra Creo Arkitekter sætter nogle ord på projektet"
         grid-text-top=""
         grid-text-bottom="Kunne du forestille dig at bo i de flotte rødstensbygninger fra 1912? Eller måske en ny botanisk have lige midt i centrum"
-        grid-image-src="https://fakeimg.pl/774x516"
+        grid-interview="src/components/icon/Simon.mp4"
         :vertical="true"
       />
     </section>

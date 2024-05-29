@@ -24,6 +24,6 @@
 }
 
 .h2_poppins {
-  width: 500px;
+  width: 400px;
 }
 </style>

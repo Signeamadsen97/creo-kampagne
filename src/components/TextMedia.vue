@@ -1,4 +1,5 @@
 <script setup>
+
 const props = defineProps({
   heading: {
     type: String,
@@ -36,7 +37,11 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  overflow: {
+  gridInterview: {
+    type: String,
+    default: "",
+  },
+    overflow: {
     // Ny prop til at bestemme om billedet skal overlappe
     type: Boolean,
     default: false,
@@ -63,7 +68,10 @@ const props = defineProps({
           {{ gridTextBottom }}
         </p>
       </div>
-      <img :src="gridImageSrc" alt="" class="media_img" />
+      <img v-if="gridImageSrc.length" :src="gridImageSrc" alt="" class="media_img" />
+      <video v-if="gridInterview" class="interview_media" controls>
+        <source :src="gridInterview" />
+      </video>
     </div>
   </div>
 </template>
@@ -101,6 +109,7 @@ const props = defineProps({
   &.vertical {
     padding-left: 0px;
     padding-top: 120px;
+    padding-bottom: 65px;
 
     .grid {
       grid-template-columns: 1.3fr 1fr;
@@ -109,6 +118,25 @@ const props = defineProps({
       .media_text {
         width: 70%;
         padding-bottom: 20%;
+        order: 2;
+        margin-left: 30px;
+
+        @media screen and (max-width: 900px) {
+        padding-bottom: 0px;
+      }
+      }
+
+      .interview_media {
+        width: 100%;
+        order: 1;
+        margin-left: 65px;
+        
+        @media screen and (max-width: 900px) {
+        display: flex;
+        padding-right: 40px;
+        order: 2;
+      }
+       
       }
 
       .h3_poppins {

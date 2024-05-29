@@ -37,9 +37,10 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 70px;
 
-  @media screen and (max-width: 730px) {
+  @media screen and (max-width: 900px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
   }
 }
 
