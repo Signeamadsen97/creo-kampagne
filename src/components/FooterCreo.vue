@@ -75,8 +75,8 @@
 
       <div class="some_img">
         <a href=""><img src="./icon/somelogo.png" alt="LD" /></a>
-        <a href=""><img src="./icon/iglogo.png" alt="IG" /></a>
-        <a href=""><img src="./icon/fblogo.png" alt="FB" /></a>
+        <a href="https://www.instagram.com/creo_arkitekter/"><img src="./icon/iglogo.png" alt="IG" /></a>
+        <a href="https://www.facebook.com/CreoArkitekter/?locale=da_DK"><img src="./icon/fblogo.png" alt="FB" /></a>
       </div>
     </div>
   </div>
