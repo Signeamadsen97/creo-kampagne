@@ -10,16 +10,16 @@ import overblikImage from "@/components/icon/overblik.jpg"
 
 const profiles = [
   {
+    img: simonImage,
+    text: "Creo har historisk tilknytning til området, vi vil gerne være en del af dens fremtid",
+  },
+  {
     img: "https://fakeimg.pl/467x549",
     text: "Området har potentiale til fanstiske grønne områder",
   },
   {
     img: kristinaImage,
     text: "Man kan virkelig slippe drømmene løs og tænke stort",
-  },
-  {
-    img: simonImage,
-    text: "Creo har historisk tilknytning til området, vi vil gerne være en del af dens fremtid",
   },
   {
     img: "https://fakeimg.pl/467x549",
