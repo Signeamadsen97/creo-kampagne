@@ -16,24 +16,36 @@
         </p>
       </div>
       <div class="img">
-        <img class="img_tib" src="../icon/skyrise.jpg" alt="" />
+        <img class="img_tib" src="../icon/creostart.png" alt="" />
       </div>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 10px;
+  place-items: center;
 }
+
+@media screen and (max-width: 850px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    } 
+  }
+
 
 .h1_poppins {
   padding-bottom: 30px;
 }
 
 .header1 {
-  margin-left: 20%
+  padding-top: 20px;
+  margin-left: 20%;
 }
 
 .header2 {
@@ -43,12 +55,12 @@
 .h3_poppins {
   width: 500px;
   color: black;
-  margin-left: 10%;
-  line-height: 3rem;
 }
 
 .img_tib {
-  width: 90%;
+width: 100%;
+max-height: 650px;
+object-fit: cover;
 }
 
 .wrapper {

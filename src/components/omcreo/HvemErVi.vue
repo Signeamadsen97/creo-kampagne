@@ -26,6 +26,7 @@ const props = defineProps({
 <style scoped lang="scss">
 
 .h1_poppins {
+  padding-top: 60px;
   text-align: center;
   padding-bottom: 100px;
 }
