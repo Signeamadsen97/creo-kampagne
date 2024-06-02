@@ -40,13 +40,13 @@
   @media screen and (max-width: 900px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
   }
 }
 
 .h1_poppins {
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
   color: black;
 }
 
@@ -54,15 +54,16 @@
   display: grid;
   color: black;
   font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .grid img {
-  width: 70%;
+  width: 50%;
 }
 
 .brand_wrapper {
   padding: var(--wrapper-padding);
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   background: linear-gradient(270deg, #616d38, #d4d4aa, #fefae0);
   background-size: 600% 600%;
   animation: gradientAnimation 8s ease infinite;
