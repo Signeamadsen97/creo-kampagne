@@ -17,12 +17,7 @@ const props = defineProps({
 
 <template>
   <label class="body_poppins input">
-    <input
-      type="radio"
-      :name="name"
-      @change="$emit('changed', $event.target.value)"
-      :value="value"
-    />
+    <input type="radio" :name="name" @change="$emit('changed', $event.target.value)" :value="value" />
     <div class="radio"></div>
     <span> {{ label }} </span>
   </label>
@@ -32,14 +27,14 @@ const props = defineProps({
 .input {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 }
 
 input[type="radio"] {
   display: none;
 
   &:checked {
-    ~ .radio::after {
+    ~.radio::after {
       display: block;
     }
   }
@@ -59,7 +54,7 @@ input[type="radio"] {
     content: "";
     height: 10px;
     width: 10px;
-    background: #fff;
+    background: #EDB458;
     display: block;
     border-radius: 50%;
     display: none;

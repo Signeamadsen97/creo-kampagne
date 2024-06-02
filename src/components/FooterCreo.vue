@@ -3,7 +3,7 @@
 <template>
   <div class="footer_wrapper">
     <div class="grid">
-      <p class="text">
+      <p class="h3_poppins">
         Boulevarden bringer samfundet sammen og styrker tilliden gennem
         samarbejde.
       </p>

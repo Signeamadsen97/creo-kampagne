@@ -78,13 +78,13 @@ const handleDislikeClick = () => {
 
 <style scoped lang="scss">
 .wrapper {
-  background-color: #d4d4aa;
+  background-color: white;
   padding: 50px var(--wrapper-padding-x);
   margin-top: 80px;
 
   &.reverse {
     margin-top: -5px;
-    background-color: white;
+    background-color: #d4d4aa;
 
     .grid {
       grid-template-areas:

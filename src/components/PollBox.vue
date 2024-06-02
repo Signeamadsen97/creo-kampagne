@@ -36,22 +36,24 @@ async function submit() {
     <h1 class="h2_poppins">
       Hvad drømmer du om?
     </h1>
+    <h2 class="h3_poppins">
+      Tjek den ide af du drømmer om herunder
+    </h2>
     <form @submit.prevent="submit">
-      <InputField label="Drømmer du om lækre boliger, hvor hverdagen kan udfolde sig midt i byen?" name="vote"
+      <InputField label="Drømmer du om lækre boliger, hvor hverdagen udfolder sig midt i byen?" name="vote"
         value="option 1" @changed="handleChange" />
 
-      <InputField label="Drømmer du om grønne områder tæt ved din hverdag, til glæde for byen?" name="vote"
-        value="option 2" @changed="handleChange" />
+      <InputField label="Drømmer du om grønne områder tæt ved din hverdag?" name="vote" value="option 2"
+        @changed="handleChange" />
 
-      <InputField
-        label="Drømmer du om bæredygtighed og genandenvdelse, af nogle af de smukke facilitter som allerede eksistere?"
+      <InputField label="Drømmer du om bæredygtighed og genandenvdelse, af nogle af de smukke eksisterende facilitter?"
         name="vote" value="option 3" @changed="handleChange" />
 
       <InputField
         label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
         name="vote" value="option 4" @changed="handleChange" />
       <div class="buttonwrapper">
-        <button type="submit">Giv os din mening her!</button>
+        <button type="submit">Send!</button>
       </div>
     </form>
   </div>
@@ -61,7 +63,7 @@ async function submit() {
 .box_container {
   display: grid;
   padding: 71px 71px 51px 154px;
-  gap: 54px;
+  gap: 10px;
   background-color: #fefae0;
   width: 100%;
 }
@@ -70,6 +72,11 @@ form {
   display: grid;
   gap: 36px;
   width: 100%;
+}
+
+.h3_poppins {
+  font-size: 1.2rem;
+  padding-bottom: 40px;
 }
 
 .buttonwrapper {

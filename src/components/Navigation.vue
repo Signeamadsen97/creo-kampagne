@@ -7,7 +7,7 @@
         <RouterLink class="logo h2_poppins" to="/">Boulevarden</RouterLink>
       </li>
       <li>
-        <RouterLink class="h3_poppins" to="/about">Om Creo</RouterLink>
+        <RouterLink class="h3_poppins" to="/about">Om Creo Arkitekter</RouterLink>
       </li>
     </ul>
   </nav>
@@ -17,6 +17,7 @@
 nav {
   background-color: #fefae0;
   padding: 10px 65px;
+
   @media screen and (max-width: 520px) {
     padding: 4px 20px;
   }

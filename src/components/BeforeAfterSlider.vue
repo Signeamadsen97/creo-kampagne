@@ -12,8 +12,8 @@ const props = defineProps({
     },
 });
 
-const beforeWidth = ref('100%');
-const afterWidth = ref('0%');
+const beforeWidth = ref('50%');
+const afterWidth = ref('50%');
 const isSliding = ref(false);
 const sliderWrapper = ref(null);
 const sliderHandle = ref(null);
@@ -83,6 +83,7 @@ onBeforeUnmount(() => {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .slider-img img {
