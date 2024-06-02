@@ -14,7 +14,7 @@
 <style scoped>
 .break-square {
   width: 100%;
-  height: 325px;
+  height: 160px;
   background-color: #D4D4AA;
   position: relative;
   z-index: 0;
