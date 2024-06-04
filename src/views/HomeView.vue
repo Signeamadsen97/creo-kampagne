@@ -20,7 +20,7 @@ import perspektivImage from "@/components/icon/perspektiv.png";
 import boligblokImage from "@/components/icon/boligblok.jpg";
 import boligIkon from "@/components/icon/house-ikon.svg";
 import groentIkon from "@/components/icon/tree-ikon.svg";
-import genanvendelseIkon from "@/components/icon/reuse-ikon.svg";
+import genanvendelseIkon from "@/components/icon/reuse.svg";
 
 import { ref, onMounted } from "vue";
 import TwoColumnGrid from "@/components/TwoColumnGrid.vue";
@@ -43,8 +43,8 @@ async function getPollResults() {
 
 const items = ref([
   {
-    text1: `Der er i alt`,
-    text2: `som har stemt det samme som dig`,
+    text1: `I alt`,
+    text2: `personer drømmer om boliger`,
     image: {
       src: boligIkon,
       alt: "Billede 1",
@@ -52,8 +52,8 @@ const items = ref([
     votes: 0,
   },
   {
-    text1: `Der er i alt`,
-    text2: `som har stemt det samme som dig`,
+    text1: `I alt`,
+    text2: `drømmer om grønne områder`,
     votes: 0,
     image: {
       src: groentIkon,
@@ -61,8 +61,8 @@ const items = ref([
     },
   },
   {
-    text1: "Der er i alt",
-    text2: `som har stemt det samme som dig`,
+    text1: "I alt",
+    text2: `drømmer om genanvendele og bæredygtighed`,
     votes: 0,
     image: {
       src: genanvendelseIkon,

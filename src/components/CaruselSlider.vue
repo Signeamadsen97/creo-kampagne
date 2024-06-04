@@ -72,6 +72,7 @@ const breakpoints = {
   --vc-nav-color: green;
 
   padding-top: 114px;
+  margin-bottom: 5%;
 }
 
 .slide {
@@ -87,7 +88,7 @@ const breakpoints = {
 }
 
 img {
-  width: 50%;
+  width: 40%;
   aspect-ratio: 10/9;
 }
 
