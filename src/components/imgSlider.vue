@@ -86,11 +86,11 @@ export default {
 
 .left-arrow {
     position: absolute;
-    left: -50px;
+    left: -70px;
 }
 
 .right-arrow {
     position: absolute;
-    right: -50px;
+    right: -70px;
 }
 </style>

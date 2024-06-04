@@ -41,7 +41,7 @@ const props = defineProps({
     type: String,
     default: "",
   },
-    overflow: {
+  overflow: {
     // Ny prop til at bestemme om billedet skal overlappe
     type: Boolean,
     default: false,
@@ -92,6 +92,10 @@ const props = defineProps({
     .media_text {
       order: 2;
 
+      .grid {
+        grid-template-columns: 1fr 1.5fr;
+      }
+
       @media screen and (max-width: 900px) {
         order: -1;
       }
@@ -122,21 +126,21 @@ const props = defineProps({
         margin-left: 30px;
 
         @media screen and (max-width: 900px) {
-        padding-bottom: 0px;
-      }
+          padding-bottom: 0px;
+        }
       }
 
       .interview_media {
         width: 100%;
         order: 1;
         margin-left: 65px;
-        
+
         @media screen and (max-width: 900px) {
-        display: flex;
-        padding-right: 40px;
-        order: 2;
-      }
-       
+          display: flex;
+          padding-right: 40px;
+          order: 2;
+        }
+
       }
 
       .h3_poppins {

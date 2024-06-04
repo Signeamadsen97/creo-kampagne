@@ -106,7 +106,9 @@ const handleDislikeClick = () => {
     "image bigtext"
     "feedback feedback";
   width: 100%;
-  column-gap: 20px;
+  column-gap: 90px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   @media screen and (max-width: 900px) {
     display: flex;

@@ -10,11 +10,11 @@ import CaruselSlider from "@/components/CaruselSlider.vue";
 import BeforeAfterImg from "@/components/BeforeAfterImg.vue";
 
 
-import afterImage1 from "@/components/icon/after1.jpg";
-import afterImage2 from "@/components/icon/after2.jpg";
+import afterImage1 from "@/components/icon/after-img1.jpg";
+import afterImage2 from "@/components/icon/after-img2.png";
 
-import beforeImage1 from "@/components/icon/before1.jpg";
-import beforeImage2 from "@/components/icon/before2.jpg";
+import beforeImage1 from "@/components/icon/before-img1.jpg";
+import beforeImage2 from "@/components/icon/before-img2.png";
 
 import perspektivImage from "@/components/icon/perspektiv.png";
 import boligblokImage from "@/components/icon/boligblok.jpg";
@@ -160,28 +160,21 @@ onMounted(async () => {
     </section>
 
     <section id="before_image">
-      <BeforeAfterImg mainHeading="Din normale overskrift" reverseMainHeading="Din omvendte overskrift"
-        subHeading="Din underoverskrift" bodyText="Din brødtekst" bigText="Stor tekst" :sliderImages="[
-          { src: beforeImage1, title: 'Titel 1' },
-          { src: beforeImage2, title: 'Titel 2' },
-          { src: beforeImage3, title: 'Titel 3' }
+      <BeforeAfterImg mainHeading="" reverseMainHeading=""
+        subHeading="Rødstensbygninger fra da OUH først blev bygget i 1912, har potentiale til at danne rammerne for fantastiske hjem."
+        bodyText="" bigText="Kunne du forestille dig at bo her?" :sliderImages="[
         ]" :reverseSliderImages="[
-  { src: afterImage1, title: 'Omvendt Titel 1' },
-  { src: afterImage2, title: 'Omvendt Titel 2' },
-  { src: afterImage3, title: 'Omvendt Titel 3' }
+  { src: afterImage1, title: '' },
+  { src: afterImage2, title: '' },
 ]" :reverse="true" />
 
 
-      <BeforeAfterImg mainHeading="Din normale overskrift" reverseMainHeading="Din omvendte overskrift"
-        subHeading="Din underoverskrift" bodyText="Din brødtekst" bigText="Stor tekst" :sliderImages="[
-          { src: beforeImage1, title: 'Titel 1' },
-          { src: beforeImage2, title: 'Titel 2' },
-          { src: beforeImage3, title: 'Titel 3' }
-        ]" :reverseSliderImages="[
-  { src: afterImage1, title: 'Omvendt Titel 1' },
-  { src: afterImage2, title: 'Omvendt Titel 2' },
-  { src: afterImage3, title: 'Omvendt Titel 3' }
-]" />
+      <BeforeAfterImg mainHeading="" reverseMainHeading=""
+        subHeading="Et vidensområde for Medicinstuderende bliver nu til et udendørs samlingspunkt omringet af grønt."
+        bodyText="" bigText="Hvad synes du?" :sliderImages="[
+          { src: beforeImage1, title: '' },
+          { src: beforeImage2, title: '' },
+        ]" />
     </section>
 
     <section id="poll_text">
