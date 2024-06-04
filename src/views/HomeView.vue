@@ -21,6 +21,7 @@ import boligblokImage from "@/components/icon/boligblok.jpg";
 import boligIkon from "@/components/icon/house-ikon.svg";
 import groentIkon from "@/components/icon/tree-ikon.svg";
 import genanvendelseIkon from "@/components/icon/reuse.svg";
+import socialIkon from "@/components/icon/social-ikon.svg"
 
 import { ref, onMounted } from "vue";
 import TwoColumnGrid from "@/components/TwoColumnGrid.vue";
@@ -74,7 +75,7 @@ const items = ref([
     text2: `drømmer om sociale samlingsområder`,
     votes: 0,
     image: {
-      src: "https://fakeimg.pl/467x549",
+      src: socialIkon,
       alt: "Billede 1",
     },
   },
