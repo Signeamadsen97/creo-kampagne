@@ -70,8 +70,8 @@ const items = ref([
     },
   },
   {
-    text1: "Der er i alt",
-    text2: `som har stemt det samme som dig`,
+    text1: "I alt",
+    text2: `drømmer om sociale samlingsområder`,
     votes: 0,
     image: {
       src: "https://fakeimg.pl/467x549",

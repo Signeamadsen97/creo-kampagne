@@ -3,10 +3,12 @@ import CreoIntro from "@/components/omcreo/CreoIntro.vue";
 import HvemErVi from "@/components/omcreo/HvemErVi.vue";
 import TextImageBackground from "@/components/omcreo/TextImageBackground.vue";
 import TextMedia from "@/components/TextMedia.vue";
+import overblikImage from "@/components/icon/overblik.jpg"
 
 import kristinaImage from "@/components/icon/kristina.png";
 import simonImage from "@/components/icon/simon.png";
-import overblikImage from "@/components/icon/overblik.jpg"
+import rytisImage from "@/components/icon/rytis.png";
+import larsImage from "@/components/icon/lars.png"
 
 const profiles = [
   {
@@ -14,7 +16,7 @@ const profiles = [
     text: "Creo har historisk tilknytning til området, vi vil gerne være en del af dens fremtid",
   },
   {
-    img: "https://fakeimg.pl/467x549",
+    img: rytisImage,
     text: "Området har potentiale til fanstiske grønne områder",
   },
   {
@@ -22,8 +24,8 @@ const profiles = [
     text: "Man kan virkelig slippe drømmene løs og tænke stort",
   },
   {
-    img: "https://fakeimg.pl/467x549",
-    text: "Jeg er vild med at lege med bygninger?",
+    img: larsImage,
+    text: "Der er fantastiske muligheder, i de gamle rødstensbygninger",
   },
 ];
 </script>

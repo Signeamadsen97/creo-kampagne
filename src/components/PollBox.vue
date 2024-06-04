@@ -49,8 +49,7 @@ async function submit() {
       <InputField label="Drømmer du om bæredygtighed og genandenvdelse, af nogle af de smukke eksisterende facilitter?"
         name="vote" value="option 3" @changed="handleChange" />
 
-      <InputField
-        label="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ullam beatae ab commodi odio exercitationem?"
+      <InputField label="Drømmer du om sociale områder, hvor byens borgere har muliged for at samles og opholde sig?"
         name="vote" value="option 4" @changed="handleChange" />
       <div class="buttonwrapper">
         <button type="submit">Send!</button>
