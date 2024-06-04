@@ -9,12 +9,15 @@ import PollBox from "@/components/PollBox.vue";
 import CaruselSlider from "@/components/CaruselSlider.vue";
 import BeforeAfterImg from "@/components/BeforeAfterImg.vue";
 
-import beforeImage1 from "@/components/icon/before1.jpg";
+
 import afterImage1 from "@/components/icon/after1.jpg";
-import beforeImage2 from "@/components/icon/before2.jpg";
 import afterImage2 from "@/components/icon/after2.jpg";
-import karreImage from "@/components/icon/karre.jpg";
+
+import beforeImage1 from "@/components/icon/before1.jpg";
+import beforeImage2 from "@/components/icon/before2.jpg";
+
 import perspektivImage from "@/components/icon/perspektiv.png";
+import boligblokImage from "@/components/icon/boligblok.jpg";
 import boligIkon from "@/components/icon/house-ikon.svg";
 import groentIkon from "@/components/icon/tree-ikon.svg";
 import genanvendelseIkon from "@/components/icon/resuse-ikon.svg";
@@ -145,7 +148,7 @@ onMounted(async () => {
             Derfor vil vi give muligheden for allerede nu at i kan komme med jeres ideer og drømme. <br/> 
             Drømmer du om skønne boliger, Grønne områder, sociale samlings steder eller noget helt andet, i dit nærområde? <br/>
             Så er det nu og her du kan få muligheden for at netop dine drømme bliver inkluderet i udviklingen."
-            :grid-image-src="karreImage" :reverse="true" />
+            :grid-image-src="perspektivImage" :reverse="true" />
         </template>
       </TwoColumnGrid>
     </section>
