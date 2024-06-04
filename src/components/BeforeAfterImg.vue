@@ -1,5 +1,6 @@
 <script setup>
-import BeforeAfterSlider from "./BeforeAfterSlider.vue";
+
+import ImageSlider from "./imgSlider.vue"
 
 const props = defineProps({
   reverse: {
@@ -26,13 +27,15 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  beforeImage: {
-    type: String,
+  sliderImages: {
+    type: Array,
     required: true,
+    default: () => [],
   },
-  afterImage: {
-    type: String,
+  reverseSliderImages: {
+    type: Array,
     required: true,
+    default: () => [],
   },
   feedback: {
     type: Boolean,
@@ -60,8 +63,7 @@ const handleDislikeClick = () => {
         <p class="body_poppins">{{ bodyText }}</p>
       </div>
       <div>
-        <!-- Brug BeforeAfterSlider komponenten med props til billeder -->
-        <BeforeAfterSlider :beforeImage="beforeImage" :afterImage="afterImage" />
+        <ImageSlider :images="reverse ? reverseSliderImages : sliderImages" />
       </div>
       <h3 class="bigtext h1_poppins">{{ bigText }}</h3>
       <div class="feedback-section">
