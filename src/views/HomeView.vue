@@ -20,7 +20,7 @@ import perspektivImage from "@/components/icon/perspektiv.png";
 import boligblokImage from "@/components/icon/boligblok.jpg";
 import boligIkon from "@/components/icon/house-ikon.svg";
 import groentIkon from "@/components/icon/tree-ikon.svg";
-import genanvendelseIkon from "@/components/icon/resuse-ikon.svg";
+import genanvendelseIkon from "@/components/icon/reuse-ikon.svg";
 
 import { ref, onMounted } from "vue";
 import TwoColumnGrid from "@/components/TwoColumnGrid.vue";
