@@ -37,7 +37,7 @@ async function submit() {
       Hvad drømmer du om?
     </h1>
     <h2 class="h3_poppins">
-      Tjek den ide af du drømmer om herunder
+      Vælg den ide du drømmer om herunder
     </h2>
     <form @submit.prevent="submit">
       <InputField label="Drømmer du om lækre boliger, hvor hverdagen udfolder sig midt i byen?" name="vote"
