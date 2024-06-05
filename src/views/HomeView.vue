@@ -21,7 +21,7 @@ import boligblokImage from "@/components/icon/boligblok.jpg";
 import boligIkon from "@/components/icon/house-ikon.svg";
 import groentIkon from "@/components/icon/tree-ikon.svg";
 import genanvendelseIkon from "@/components/icon/reuse.svg";
-import socialIkon from "@/components/icon/social-ikon.svg"
+import socialIkon from "@/components/icon/social-icon.svg"
 
 import { ref, onMounted } from "vue";
 import TwoColumnGrid from "@/components/TwoColumnGrid.vue";
@@ -138,7 +138,7 @@ onMounted(async () => {
     <section id="about_project">
       <TwoColumnGrid>
         <template #col-1>
-          <TextMedia heading="OUH i dag og for fremtiden" grid-heading="Byområdet midt i Odense skal have nyt liv"
+          <TextMedia heading="OUH i dag" grid-heading="Byområdet midt i Odense skal have nyt liv"
             grid-text-top="i dag er OUH fyns største arbejdsplads, men om nogen år når  hospitalet flytter adresse, bliver mulighederne er mange. Området skal genanvendes og blive til noget nyt. <br/>
             Der er på området blevet bygget over mange år, i den byggestilen so har passet til tiden. Derfor står der mange forskellige bygningskroppe på området, fra forskellige tider og stilarter. Alle bygningerne har forskellige potentialer for genanvendelse efter hospitalets udrykning. "
             :grid-image-src="boligblokImage" />
