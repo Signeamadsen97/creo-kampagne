@@ -28,6 +28,8 @@
   grid-template-columns: 1fr 1.2fr;
   gap: 10px;
   place-items: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 850px) {
