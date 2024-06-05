@@ -17,7 +17,6 @@ import beforeImage1 from "@/components/icon/before-img1.jpg";
 import beforeImage2 from "@/components/icon/before-img2.png";
 
 import perspektivImage from "@/components/icon/perspektiv.png";
-import boligblokImage from "@/components/icon/boligblok.jpg";
 import boligIkon from "@/components/icon/house-ikon.svg";
 import groentIkon from "@/components/icon/tree-ikon.svg";
 import genanvendelseIkon from "@/components/icon/reuse.svg";
@@ -28,6 +27,7 @@ import TwoColumnGrid from "@/components/TwoColumnGrid.vue";
 
 import { initializeApp } from "firebase/app";
 import firebaseConfig from "@/utils/db.js";
+import { Icon } from "vue3-carousel";
 
 const poll = ref();
 const app = initializeApp(firebaseConfig);
@@ -141,7 +141,7 @@ onMounted(async () => {
           <TextMedia heading="OUH i dag" grid-heading="Byområdet midt i Odense skal have nyt liv"
             grid-text-top="i dag er OUH fyns største arbejdsplads, men om nogen år når  hospitalet flytter adresse, bliver mulighederne er mange. Området skal genanvendes og blive til noget nyt. <br/>
             Der er på området blevet bygget over mange år, i den byggestilen so har passet til tiden. Derfor står der mange forskellige bygningskroppe på området, fra forskellige tider og stilarter. Alle bygningerne har forskellige potentialer for genanvendelse efter hospitalets udrykning. "
-            :grid-image-src="boligblokImage" />
+            grid-image-src="src/components/Icon/boligblok.jpg" />
         </template>
         <template #col-2>
           <TextMedia heading="" grid-heading="Drømme for fremtiden" grid-text-top="
@@ -171,7 +171,7 @@ onMounted(async () => {
 
 
       <BeforeAfterImg mainHeading="" reverseMainHeading=""
-        subHeading="Et vidensområde for Medicinstuderende bliver nu til et udendørs samlingspunkt omringet af grønt."
+        subHeading="Et vidensområde for Medicinstuderende bliver nu til et udendørs samlingspunkt, omringet af grønt."
         bodyText="" bigText="Hvad synes du?" :sliderImages="[
           { src: beforeImage1, title: '' },
           { src: beforeImage2, title: '' },

@@ -6,7 +6,7 @@ const props = defineProps({
   },
   secondColumnWidth: {
     type: String,
-    default: "1fr",
+    default: "1.3fr",
   },
   gap: {
     type: String,
