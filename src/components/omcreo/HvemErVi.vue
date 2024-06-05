@@ -62,8 +62,8 @@ const props = defineProps({
     &::after {
       content: "";
       display: block;
-      height: 55px;
-      width: 55px;
+      height: 38px;
+      width: 38px;
       background-image: url("../icon/Quote.png");
       background-size: 100%;
     }
