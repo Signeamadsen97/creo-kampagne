@@ -2,7 +2,6 @@
 
 <template>
   <div class="brand_wrapper">
-    <h1 class="h1_poppins">Vi går op i</h1>
     <div class="grid">
       <div class="icon1">
         <img src="./icon/icon1.svg" alt="" />
@@ -36,6 +35,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 70px;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 900px) {
     display: grid;
@@ -44,24 +45,29 @@
   }
 }
 
-.h1_poppins {
-  text-align: center;
-  font-size: 40px;
-  color: black;
-}
 
 .h2_poppins {
   display: grid;
   color: black;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
+.body_poppins {
+  text-align: left;
+}
 .grid img {
-  width: 50%;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin: 0 auto;
+  
 }
 
 .brand_wrapper {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: var(--wrapper-padding);
   margin-bottom: 3%;
   background: linear-gradient(270deg, #616d38, #d4d4aa, #fefae0);
