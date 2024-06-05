@@ -149,7 +149,7 @@ onMounted(async () => {
             Derfor vil vi give muligheden for allerede nu at i kan komme med jeres ideer og drømme. <br/> 
             Drømmer du om skønne boliger, Grønne områder, sociale samlings steder eller noget helt andet, i dit nærområde? <br/>
             Så er det nu og her du kan få muligheden for at netop dine drømme bliver inkluderet i udviklingen."
-            :grid-image-src="perspektivImage" :reverse="true" />
+            grid-image-src="src/components/icon/perspektiv.png" :reverse="true" />
         </template>
       </TwoColumnGrid>
     </section>
