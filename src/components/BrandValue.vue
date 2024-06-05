@@ -53,9 +53,6 @@
   font-size: 1.5rem;
 }
 
-.body_poppins {
-  text-align: left;
-}
 .grid img {
   width: 100%;
   max-width: 250px;
