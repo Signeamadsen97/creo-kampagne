@@ -16,7 +16,6 @@ import afterImage2 from "@/components/icon/after-img2.png";
 import beforeImage1 from "@/components/icon/before-img1.jpg";
 import beforeImage2 from "@/components/icon/before-img2.png";
 
-import perspektivImage from "@/components/icon/perspektiv.png";
 import boligIkon from "@/components/icon/house-ikon.svg";
 import groentIkon from "@/components/icon/tree-ikon.svg";
 import genanvendelseIkon from "@/components/icon/reuse.svg";
