@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .break-square {
   width: 100%;
   height: 160px;
@@ -20,6 +20,14 @@
   z-index: 0;
   margin-top: -50px;
   overflow: hidden;
+
+  @media screen and (max-width: 900px) {
+         height: 120px;
+        }
+
+  @media screen and (max-width: 400px) {
+          height: 80px;
+        }
 }
 
 .marquee {
@@ -36,6 +44,14 @@
   display: inline-block;
   animation: marquee 13s linear infinite;
   font-size: 7rem;
+
+  @media screen and (max-width: 900px) {
+         font-size: 65px;
+        }
+
+  @media screen and (max-width: 400px) {
+          font-size: 45px;
+        }
 }
 
 @keyframes marquee {

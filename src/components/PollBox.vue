@@ -58,7 +58,7 @@ async function submit() {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .box_container {
   display: grid;
   padding: 71px 71px 51px 154px;
@@ -67,6 +67,13 @@ async function submit() {
   width: 100%;
 }
 
+@media screen and (max-width: 560px) {
+  .box_container {
+    display: grid;
+    padding: 20px; 
+    gap: 5px; 
+  }
+}
 form {
   display: grid;
   gap: 36px;
@@ -98,7 +105,6 @@ button {
     Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
-  justify-content: center;
   line-height: 1.25;
   margin: 0;
   min-height: 3rem;

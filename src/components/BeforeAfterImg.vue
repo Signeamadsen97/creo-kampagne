@@ -128,6 +128,17 @@ const handleDislikeClick = () => {
   @media screen and (max-width: 900px) {
     font-size: 60px;
   }
+
+  @media screen and (max-width: 450px) {
+    font-size: 20px;
+  }
+}
+.h2_poppins {
+  font-size: 2rem;
+
+  @media screen and (max-width: 450px) {
+      font-size: 1rem;
+  }
 }
 
 .feedback-section {
@@ -164,4 +175,7 @@ const handleDislikeClick = () => {
 .text {
   grid-area: text;
 }
+
+
+
 </style>

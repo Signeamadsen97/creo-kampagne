@@ -117,6 +117,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     display: flex;
     flex-direction: column-reverse;
   }
+  @media screen and (max-width: 500px) {
+         margin-top: 0px;
+         padding-bottom: 10px;
+        }
 }
 
 .heromedia {
@@ -143,6 +147,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     padding-top: 30px;
     order: 2;
   }
+  @media screen and (max-width: 500px) {
+         font-size: 15px;
+         margin-top: 20px;
+        }
 }
 
 .hero_1 {
@@ -159,6 +167,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     text-align: start;
     font-size: 25px;
   }
+  @media screen and (max-width: 500px) {
+         font-size: 20px;
+        }
+
 }
 
 .hero_2 {
@@ -175,6 +187,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     font-size: 25px;
     //margin-top: -39px;
   }
+
+  @media screen and (max-width: 500px) {
+         font-size: 20px;
+        }
 }
 
 .banner-video {
@@ -215,9 +231,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   transform: translate(-50%, -50%);
   z-index: 1;  
 
-  @media screen and (max-width: 850px) {
-    
-  }
   .triangle {
     -webkit-transition: all 0.7s ease-in-out;
     stroke-dasharray: 240;

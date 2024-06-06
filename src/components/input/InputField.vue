@@ -19,7 +19,7 @@ const props = defineProps({
   <label class="body_poppins input">
     <input type="radio" :name="name" @change="$emit('changed', $event.target.value)" :value="value" />
     <div class="radio"></div>
-    <span> {{ label }} </span>
+    <span class="text"> {{ label }} </span>
   </label>
 </template>
 
@@ -64,5 +64,24 @@ input[type="radio"] {
 label {
   font-size: 20px;
   font-weight: 100;
+}
+@media screen and (max-width: 450px) {
+  .input {
+    gap: 15px; /* Reducer gap for mindre skærme */
+  }
+
+  .radio {
+    height: 15px;
+    width: 15px;
+
+    &::after {
+      height: 7px;
+      width: 7px;
+    }
+  }
+
+  label {
+    font-size: 16px; /* Reducer font-størrelse for mindre skærme */
+  }
 }
 </style>

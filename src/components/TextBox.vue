@@ -24,6 +24,18 @@
 }
 
 .h2_poppins {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 450px) {
+  .textbox {
+    padding: 20px var(--wrapper-padding-x); /* Juster padding for mindre skærme */
+  }
+
+  .h2_poppins {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 </style>

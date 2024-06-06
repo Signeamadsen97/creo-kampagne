@@ -99,7 +99,7 @@ const props = defineProps({
       @media screen and (max-width: 900px) {
         order: -1;
       }
-
+      
       .h3_poppins {
         padding-top: 20px;
       }
@@ -107,6 +107,9 @@ const props = defineProps({
 
     .media_img {
       order: -1;
+      @media screen and (max-width: 900px) {
+         padding-bottom: 40px;
+        }
     }
   }
 
@@ -115,9 +118,18 @@ const props = defineProps({
     padding-top: 120px;
     padding-bottom: 65px;
 
+    @media screen and (max-width: 400px) {
+          padding-left: 0px;
+        }
+
     .grid {
       grid-template-columns: 1.3fr 1fr;
       gap: 104px;
+
+      @media screen and (max-width: 900px) {
+          gap: 10px;
+        }
+      
 
       .media_text {
         width: 70%;
@@ -127,6 +139,11 @@ const props = defineProps({
 
         @media screen and (max-width: 900px) {
           padding-bottom: 0px;
+          width: 100%;
+        }
+        @media screen and (max-width: 400px) {
+          padding-right: 0px;
+          width: 100%;
         }
       }
 
@@ -137,8 +154,16 @@ const props = defineProps({
 
         @media screen and (max-width: 900px) {
           display: flex;
-          padding-right: 40px;
+          margin: 35px;
+          padding: 0px;
           order: 2;
+        }
+        @media screen and (max-width: 400px) {
+          display: flex;
+          padding-right: 0px;
+          justify-content: center;
+          order: 2;
+          margin: 35px;
         }
 
       }
@@ -148,11 +173,17 @@ const props = defineProps({
         line-height: 3rem;
         font-weight: 600;
         font-size: 2rem;
+        @media screen and (max-width: 400px) {
+          font-size: 20px;
+        }
       }
 
       .body_poppins {
         line-height: 2rem;
         font-size: 1.5rem;
+        @media screen and (max-width: 400px) {
+          font-size: 15px;
+        }
       }
 
       @media screen and (max-width: 900px) {
