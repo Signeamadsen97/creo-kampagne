@@ -15,7 +15,7 @@ import afterImage2 from "@/components/icon/after-img2.png";
 
 import beforeImage1 from "@/components/icon/before-img1.jpg";
 import beforeImage2 from "@/components/icon/before-img2.png";
-
+import simonInterview from "@/components/icon/Simon.mp4"
 import boligIkon from "@/components/icon/house-ikon.svg";
 import groentIkon from "@/components/icon/tree-ikon.svg";
 import genanvendelseIkon from "@/components/icon/reuse.svg";
@@ -139,7 +139,7 @@ onMounted(async () => {
         <template #col-1>
           <TextMedia heading="OUH i dag" grid-heading="Byområdet midt i Odense skal have nyt liv"
             grid-text-top="I dag er OUH Fyns største arbejdsplads, men om nogle år, når hospitalet flytter adresse, vil der opstå mange nye muligheder. Området skal genanvendes og blive til noget nyt.
-            Der er blevet bygget på området gennem mange år, med byggestile der passede til deres tid. Derfor står der mange forskellige bygninger på området, fra forskellige tidsperioder og stilarter. Hver bygning har sit eget potentiale for genanvendelse efter hospitalets flytning. "
+          Der er blevet bygget på området gennem mange år, med byggestile der passede til deres tid. Derfor står der mange forskellige bygninger på området, fra forskellige tidsperioder og stilarter. Hver bygning har sit eget potentiale for genanvendelse efter hospitalets flytning. "
             grid-image-src="src/components/Icon/boligblok.jpg" />
         </template>
         <template #col-2>
@@ -156,7 +156,7 @@ onMounted(async () => {
     <section id="interview_video">
       <TextMedia heading="" grid-heading="Simon fra Creo Arkitekter sætter nogle ord på projektet" grid-text-top=""
         grid-text-bottom="Kunne du forestille dig at bo i de flotte rødstensbygninger fra 1912? Eller måske en ny botanisk have lige midt i centrum"
-        grid-interview="src/components/icon/Simon.mp4" :vertical="true" />
+        :grid-interview= "simonInterview" :vertical="true" />
     </section>
 
     <section id="before_image">
