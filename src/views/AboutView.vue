@@ -4,7 +4,7 @@ import HvemErVi from "@/components/omcreo/HvemErVi.vue";
 import TextImageBackground from "@/components/omcreo/TextImageBackground.vue";
 import TextMedia from "@/components/TextMedia.vue";
 
-import overblikImg from "@src/components/icon/overblik.jpg"
+import overblikImg from "@/components/icon/overblik.jpg"
 import kristinaImage from "@/components/icon/kristina.png";
 import simonImage from "@/components/icon/simon.png";
 import rytisImage from "@/components/icon/rytis.png";

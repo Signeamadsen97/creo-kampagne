@@ -16,8 +16,8 @@ import afterImage2 from "@/components/icon/after-img2.png";
 import beforeImage1 from "@/components/icon/before-img1.jpg";
 import beforeImage2 from "@/components/icon/before-img2.png";
 
-import boligblokImg from "@src/components/Icon/boligblok.jpg";
-import perspektivImg from "@src/components/icon/perspektiv.png";
+import boligblokImg from "@/components/Icon/boligblok.jpg";
+import perspektivImg from "@/components/icon/perspektiv.png";
 import simonInterview from "@/components/icon/Simon.mp4"
 import boligIkon from "@/components/icon/house-ikon.svg";
 import groentIkon from "@/components/icon/tree-ikon.svg";
