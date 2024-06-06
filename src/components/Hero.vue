@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
               xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
               x="0px"
               y="0px"
-              width="213.7px"
-              height="213.7px"
+              width="100%"
+              height="200px"
               viewBox="0 0 213.7 213.7"
               enable-background="new 0 0 213.7 213.7"
               xml:space="preserve"
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;  
+  z-index: 1;
 
   .triangle {
     -webkit-transition: all 0.7s ease-in-out;
