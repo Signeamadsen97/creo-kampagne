@@ -29,6 +29,8 @@ const props = defineProps({
   padding-top: 60px;
   text-align: center;
   padding-bottom: 100px;
+
+  
 }
 .list {
   list-style: none;
@@ -51,6 +53,11 @@ const props = defineProps({
     width: 80%;
     display: block;
     margin: 0 auto;
+
+    @media screen and (max-width: 800px) {
+    width: 60%; /* Reducer bredden for mindre skærme */
+    max-width: none;
+  }
   }
 
   &__text {
@@ -71,6 +78,10 @@ const props = defineProps({
     &::after {
       margin-left: auto;
     }
+    @media screen and (max-width: 900px) {
+    font-size: 24px; /* Reducer font-størrelsen for mindre skærme */
   }
+  }
+  
 }
 </style>

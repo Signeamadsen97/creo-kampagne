@@ -16,7 +16,7 @@
         </p>
       </div>
       <div class="img">
-        <img class="img_tib" src="../icon/creostart.png" alt="" />
+        <img class="img_tib" src="../icon/creostart.png" alt=""  />
       </div>
     </div>
   </div>
@@ -51,18 +51,60 @@
 }
 
 .header2 {
-  margin-left: 40%
+  margin-left: 40%;
+}
+
+@media screen and (max-width: 900px) {
+
+  .header1 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .header2 {
+    margin-left: 0;
+    text-align: center;
+  }  
+  .img_tib {
+    max-height: none;
+    width: 100%;
+    object-fit: none;
+  }
+  
+  }
+
+
+  @media screen and (max-width: 450px) {
+
+.header1 {
+  margin-left: 0;
+  text-align: center;
+  font-size: 40px;
+}
+.header2 {
+  margin-left: 0;
+  text-align: center;
+  font-size: 40px;
+}  
+.img_tib {
+  max-height: none;
+  width: 100%;
+  object-fit: none;
+}
+.h3_poppins {
+  font-size: 15px;
+}
+
 }
 
 .h3_poppins {
-  width: 500px;
   color: black;
 }
 
-.img_tib {
+img {
 width: 100%;
 max-height: 650px;
 object-fit: cover;
+
 }
 
 .wrapper {

@@ -139,11 +139,9 @@ const props = defineProps({
 
         @media screen and (max-width: 900px) {
           padding-bottom: 0px;
-          width: 100%;
         }
         @media screen and (max-width: 400px) {
           padding-right: 0px;
-          width: 100%;
         }
       }
 
