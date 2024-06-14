@@ -1,13 +1,13 @@
 <script setup>
 import { ref } from "vue";
 import InputField from "@/components/input/InputField.vue";
-import { getFirestore, setDoc, doc } from "firebase/firestore";
+import { getFirestore, updateDoc, doc } from "firebase/firestore";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import firebaseConfig from "@/utils/db.js";
 import { v4 as uuidv4 } from "uuid";
 
-const emit = defineEmits(["vote"]);
+const emit = defineEmits(["submit"]);
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
@@ -18,39 +18,44 @@ function handleChange(value) {
 }
 
 async function submit() {
-  try {
-    await setDoc(doc(db, "poll", uuidv4()), {
-      vote: currentVote.value,
-    });
-  } catch (e) {
-    console.warn("error", e);
-  }
-
-  emit("vote", currentVote.value);
+  const vote = doc(db, "poll", currentVote.value);
+  emit("submit", vote);
   alert("Din stemme er indsendt 😊");
 }
 </script>
 
 <template>
   <div class="box_container">
-    <h1 class="h2_poppins">
-      Hvad drømmer du om?
-    </h1>
-    <h2 class="h3_poppins">
-      Vælg den ide du drømmer om herunder
-    </h2>
+    <h1 class="h2_poppins">Hvad drømmer du om?</h1>
+    <h2 class="h3_poppins">Vælg den ide du drømmer om herunder</h2>
     <form @submit.prevent="submit">
-      <InputField label="Drømmer du om lækre boliger, hvor hverdagen udfolder sig midt i byen?" name="vote"
-        value="option 1" @changed="handleChange" />
+      <InputField
+        label="Drømmer du om lækre boliger, hvor hverdagen udfolder sig midt i byen?"
+        name="vote"
+        value="1"
+        @changed="handleChange"
+      />
 
-      <InputField label="Drømmer du om grønne områder tæt ved din hverdag?" name="vote" value="option 2"
-        @changed="handleChange" />
+      <InputField
+        label="Drømmer du om grønne områder tæt ved din hverdag?"
+        name="vote"
+        value="2"
+        @changed="handleChange"
+      />
 
-      <InputField label="Drømmer du om bæredygtighed og genandenvdelse, af nogle af de smukke eksisterende facilitter?"
-        name="vote" value="option 3" @changed="handleChange" />
+      <InputField
+        label="Drømmer du om bæredygtighed og genandenvdelse, af nogle af de smukke eksisterende facilitter?"
+        name="vote"
+        value="3"
+        @changed="handleChange"
+      />
 
-      <InputField label="Drømmer du om sociale områder, hvor byens borgere har muliged for at samles og opholde sig?"
-        name="vote" value="option 4" @changed="handleChange" />
+      <InputField
+        label="Drømmer du om sociale områder, hvor byens borgere har muliged for at samles og opholde sig?"
+        name="vote"
+        value="4"
+        @changed="handleChange"
+      />
       <div class="buttonwrapper">
         <button type="submit">Send!</button>
       </div>
@@ -70,8 +75,8 @@ async function submit() {
 @media screen and (max-width: 560px) {
   .box_container {
     display: grid;
-    padding: 20px; 
-    gap: 5px; 
+    padding: 20px;
+    gap: 5px;
   }
 }
 form {

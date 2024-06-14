@@ -18,13 +18,14 @@
 //   return initializeApp(firebaseConfig);
 // }
 
-const fireBaseConfig = {
-  apiKey: "AIzaSyAmoaI_ssISCBHpYBNXntWZ5OGDsD_m51I",
-  authDomain: "boulevarden-odense.firebaseapp.com",
-  projectId: "boulevarden-odense",
-  storageBucket: "boulevarden-odense.appspot.com",
-  messagingSenderId: "660052345006",
-  appId: "1:660052345006:web:0de5fd9fdc2f49ed1f6d3f",
+const firebaseConfig = {
+  apiKey: "AIzaSyBGuIhd4Gy7UozmWlID8GBxnRfxruhDuyY",
+  authDomain: "mads-forbedring.firebaseapp.com",
+  databaseURL: "https://mads-forbedring-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "mads-forbedring",
+  storageBucket: "mads-forbedring.appspot.com",
+  messagingSenderId: "988226741061",
+  appId: "1:988226741061:web:8af9dd25fe44e5ce18d42c"
 };
 
-export default fireBaseConfig;
+export default firebaseConfig;

@@ -34,7 +34,6 @@ const props = defineProps({
   },
   reverseSliderImages: {
     type: Array,
-    required: true,
     default: () => [],
   },
   feedback: {

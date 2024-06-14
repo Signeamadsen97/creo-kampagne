@@ -1,42 +1,28 @@
 <script setup>
-document.addEventListener('DOMContentLoaded', (event) => {
-  const playButton = document.getElementById('playButton');
-  const video = document.getElementById('myVideo');
-  const gradientOverlay = document.getElementById('transparentOverlay');
+import { onBeforeUnmount, onMounted, ref } from "vue";
 
-  playButton.addEventListener('click', function(event) {
-    event.preventDefault(); // Forhindre standard klik-handling
-    video.play();
-    playButton.style.display = 'none'; // Skjul play-knappen, når videoen afspilles
-    gradientOverlay.style.display = 'none'; // Skjul gradient-overlay, når videoen afspilles
-  });
+const playButton = ref(null);
+const video = ref(null);
+const transparentOverlay = ref(null);
 
-  video.addEventListener('pause', function() {
-    playButton.style.display = 'block'; // Vis play-knappen igen, hvis videoen pauses
-    gradientOverlay.style.display = 'block'; // Vis gradient-overlay igen, hvis videoen pauses
-  });
+function playVideo(event) {
+  if (!video.value || !playButton.value || !transparentOverlay.value) return;
+  event.preventDefault(); // Forhindre standard klik-handling
+  video.value.play();
+  playButton.value.style.display = "none"; // Skjul play-knappen, når videoen afspilles
+  transparentOverlay.value.style.display = "none"; // Skjul gradient-overlay, når videoen afspilles
+}
 
-  video.addEventListener('play', function() {
-    gradientOverlay.style.display = 'none'; // Skjul gradient-overlay, når videoen afspilles
-  });
-});
+function pauseVideo() {
+  if (!playButton.value || !transparentOverlay.value) return;
+  playButton.value.style.display = "block"; // Vis play-knappen igen, hvis videoen pauses
+  transparentOverlay.value.style.display = "block"; // Vis gradient-overlay igen, hvis videoen pauses
+}
 
-
-
-document.addEventListener('DOMContentLoaded', (event) => {
-  const playButton = document.getElementById('playButton');
-  const video = document.getElementById('myVideo');
-
-  playButton.addEventListener('click', function(event) {
-    event.preventDefault(); // Forhindre standard klik-handling
-    video.play();
-    playButton.style.display = 'none'; // Skjul play-knappen, når videoen afspilles
-  });
-
-  video.addEventListener('pause', function() {
-    playButton.style.display = 'block'; // Vis play-knappen igen, hvis videoen pauses
-  });
-});
+function hideOverlay() {
+  if (!transparentOverlay.value) return;
+  transparentOverlay.value.style.display = "none"; // Skjul gradient-overlay, når videoen afspilles
+}
 </script>
 
 <template>
@@ -53,7 +39,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       <h1 class="hero_1 h1_poppins">Boulevarden Odense</h1>
       <div class="video_container">
         <div class="container">
-          <a href="#" class="playBut" id="playButton">
+          <a href="#" class="playBut" ref="playButton" @click="playVideo">
             <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
             <svg
               version="1.1"
@@ -70,7 +56,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             >
               <polygon
                 class="triangle"
-                id="XMLID_18_"
                 fill="none"
                 stroke-width="7"
                 stroke-linecap="round"
@@ -82,7 +67,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
               <circle
                 class="circle"
-                id="XMLID_17_"
                 fill="none"
                 stroke-width="7"
                 stroke-linecap="round"
@@ -95,8 +79,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
             </svg>
           </a>
         </div>
-        <div class="transparent-overlay" id="transparentOverlay"></div>
-        <video id="myVideo" controls>
+        <div class="transparent-overlay" ref="transparentOverlay"></div>
+        <video
+          ref="video"
+          controls
+          @pause="pauseVideo"
+          @play="playVideo, hideOverlay"
+        >
           <source class="banner-video" src="./icon/Banner_video.mp4" />
         </video>
         <h1 class="hero_2 h1_poppins">Dit nye område midt i byen</h1>
@@ -118,9 +107,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     flex-direction: column-reverse;
   }
   @media screen and (max-width: 500px) {
-         margin-top: 0px;
-         padding-bottom: 10px;
-        }
+    margin-top: 0px;
+    padding-bottom: 10px;
+  }
 }
 
 .heromedia {
@@ -148,9 +137,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     order: 2;
   }
   @media screen and (max-width: 500px) {
-         font-size: 15px;
-         margin-top: 20px;
-        }
+    font-size: 15px;
+    margin-top: 20px;
+  }
 }
 
 .hero_1 {
@@ -168,16 +157,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     font-size: 25px;
   }
   @media screen and (max-width: 500px) {
-         font-size: 20px;
-        }
-
+    font-size: 20px;
+  }
 }
 
 .hero_2 {
   position: absolute;
   right: 0;
   // margin-right: 1rem;
- // margin-top: -49px;
+  // margin-top: -49px;
 
   @media screen and (max-width: 1200px) {
     display: grid;
@@ -189,8 +177,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
   @media screen and (max-width: 500px) {
-         font-size: 20px;
-        }
+    font-size: 20px;
+  }
 }
 
 .banner-video {
@@ -203,10 +191,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
   margin-right: auto;
 
   &::before {
-  content: "before";
+    content: "before";
+  }
 }
-}
-
 
 .container {
   width: 100%;
@@ -214,7 +201,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 }
 
 .circle {
-  stroke: #0F9F55;
+  stroke: #0f9f55;
   stroke-dasharray: 650;
   stroke-dashoffset: 650;
   -webkit-transition: all 0.5s ease-in-out;
@@ -222,7 +209,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 }
 
 .playBut {
-/*  border: 1px solid red;*/
+  /*  border: 1px solid red;*/
   display: inline-block;
   -webkit-transition: all 0.5s ease;
   position: absolute;
@@ -236,42 +223,39 @@ document.addEventListener('DOMContentLoaded', (event) => {
     stroke-dasharray: 240;
     stroke-dashoffset: 480;
     stroke: #000;
-    transform: translateY(0) 
-   }
-  
-  
+    transform: translateY(0);
+  }
+
   &:hover {
-    
     .triangle {
       stroke-dashoffset: 0;
       opacity: 1;
-      stroke: #0F9F55;
+      stroke: #0f9f55;
       animation: nudge 0.7s ease-in-out;
-      
-      @keyframes nudge{
+
+      @keyframes nudge {
         0% {
-          transform: translateX(0)  
+          transform: translateX(0);
         }
         30% {
-          transform: translateX(-5px)
+          transform: translateX(-5px);
         }
         50% {
-          transform: translateX(5px)
+          transform: translateX(5px);
         }
         70% {
-          transform: translateX(-2px)
+          transform: translateX(-2px);
         }
         100% {
-          transform: translateX(0)
+          transform: translateX(0);
         }
       }
     }
-    
+
     .circle {
       stroke-dashoffset: 0;
       opacity: 1;
     }
-    
   }
 }
 
@@ -295,5 +279,4 @@ video {
   z-index: 1;
   pointer-events: none;
 }
-
 </style>

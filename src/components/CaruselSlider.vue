@@ -30,12 +30,16 @@ const breakpoints = {
       <slide v-for="slide in slides" :key="slide">
         <div class="slide">
           <div class="img-container">
-            <img :src="slide.image.src" :alt="slide.image.alt" />
+            <img
+              :src="`/icons/${slide.image.src}`"
+              :alt="slide.image.alt"
+            />
           </div>
           <p class="body_poppins slide_text">
             <span>{{ slide.text1 }}</span>
             &nbsp;
-            <span>{{ slide.votes }}</span>&nbsp;
+            <span>{{ slide.votes }}</span
+            >&nbsp;
             <span>{{ slide.text2 }}</span>
           </p>
         </div>
@@ -45,17 +49,31 @@ const breakpoints = {
         <navigation>
           <template #prev>
             <div class="slider_prev">
-              <svg class="carousel__icon" viewBox="0 0 24 24" role="img" aria-label="Arrow pointing to the left">
+              <svg
+                class="carousel__icon"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-label="Arrow pointing to the left"
+              >
                 <title>Arrow pointing to the left</title>
-                <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                <path
+                  d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+                ></path>
               </svg>
             </div>
           </template>
           <template #next>
             <div class="slider_prev">
-              <svg class="carousel__icon" viewBox="0 0 24 24" role="img" aria-label="Arrow pointing to the right">
+              <svg
+                class="carousel__icon"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-label="Arrow pointing to the right"
+              >
                 <title>Arrow pointing to the right</title>
-                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+                <path
+                  d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+                ></path>
               </svg>
             </div>
           </template>
@@ -91,7 +109,6 @@ img {
   width: 40%;
   aspect-ratio: 10/9;
 }
-
 
 h1 {
   text-align: center;
